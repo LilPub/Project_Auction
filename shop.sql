@@ -174,7 +174,7 @@ CREATE TABLE IF NOT EXISTS `solditems` (
   `FinalValue` int(6) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- --------------------------------------------------------
+-- -------------------------------------------------------
 
 --
 -- Table structure for table `user`
