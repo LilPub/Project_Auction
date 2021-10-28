@@ -13,24 +13,21 @@
     <meta name="keywords" content="">
 
     <title>
-        Bid Now : Auction Marketplace
+        Đấu giá TLU
     </title>
 
     <meta name="keywords" content="">
 
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100' rel='stylesheet' type='text/css'>
 
-    <!-- styles -->
     <link href="css/font-awesome.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
     <link href="css/owl.carousel.css" rel="stylesheet">
     <link href="css/owl.theme.css" rel="stylesheet">
 
-    <!-- theme stylesheet -->
     <link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet">
 
-    <!-- your stylesheet with modifications -->
     <link href="css/custom.css" rel="stylesheet">
 
     <script src="js/respond.min.js"></script>
@@ -67,7 +64,6 @@
                 </ul>
 
             </div>
-            <!--/.nav-collapse -->
 
     <div id="all">
 
@@ -87,12 +83,11 @@
                         </div>
                         
                     </div>
-                    <!-- /#main-slider -->
+                    
                 </div>
             </div>
 
-            <!-- *** ADVANTAGES HOMEPAGE ***
- _______________________________________________________ -->
+            <!-- home -->
             <div id="advantages">
 
                 <div class="container">
@@ -102,8 +97,8 @@
                                 <div class="icon"><i class="fa fa-heart"></i>
                                 </div>
 
-                                <h3><a href="#">We love our customers</a></h3>
-                                <p>We are known to provide best possible service ever</p>
+                                <h3><a href="#">Khách hàng thân thiện</a></h3>
+                                <p>Chúng tôi sẽ cung cấp dịch vụ tốt nhất cho khách hàng.</p>
                             </div>
                         </div>
 
@@ -112,8 +107,8 @@
                                 <div class="icon"><i class="fa fa-tags"></i>
                                 </div>
 
-                                <h3><a href="#">Best prices</a></h3>
-                                <p>You can check that the height of the boxes adjust when longer text like this one is used in one of them.</p>
+                                <h3><a href="#">Giá tốt nhất</a></h3>
+                                <p>Chúng tôi sẽ cung cấp những sản phẩm với đầy ưu đãi.</p>
                             </div>
                         </div>
 
@@ -122,25 +117,19 @@
                                 <div class="icon"><i class="fa fa-thumbs-up"></i>
                                 </div>
 
-                                <h3><a href="#">100% satisfaction guaranteed</a></h3>
-                                <p>Free returns on everything for 3 months.</p>
+                                <h3><a href="#">Sự hài lòng </a></h3>
+                                <p>Những dịch vụ tốt nhất để phục vụ khách hàng.</p>
                             </div>
                         </div>
                     </div>
-                    <!-- /.row -->
 
                 </div>
-                <!-- /.container -->
 
             </div>
-            <!-- /#advantages -->
-
-            <!-- *** ADVANTAGES END *** -->
-
-            <!-- *** HOT PRODUCT SLIDESHOW ***
 
 
- _________________________________________________________ -->
+
+
 
 
             <?php 
@@ -156,7 +145,7 @@
                 <div class="box">
                     <div class="container">
                         <div class="col-md-12">
-                            <h2>Latest Products</h2>
+                            <h2>Sản phẩm mới nhất</h2>
                         </div>
                     </div>
                 </div>
@@ -196,9 +185,9 @@
 									
 
                                 </div>
-                                <!-- /.text -->
+                                
                             </div>
-                            <!-- /.product -->
+                            
                         </div>
 
                        <?php $row = $result->fetch_assoc();
@@ -210,7 +199,7 @@
                 </div>
 
                 
-                <!-- /.container -->
+                
 			</div>
 
             <?php 
@@ -267,13 +256,13 @@
                                 </a>
                                 <div class="text">
                                     <h3><a href="detail.php?ItemNo=<?php echo $row5['ItemID'] ?>"><?php echo $row5['ItemName']?></a></h3>
-                                    <p class="price">Rs : <?php echo number_format($row5['CurrentPrice'],2)?></p>
+                                    <p class="price">Giá : <?php echo number_format($row5['CurrentPrice'],2)?></p>
 									
 
                                 </div>
-                                <!-- /.text -->
+                                
                             </div>
-                            <!-- /.product -->
+                            
                         </div>
 
                        <?php $row5 = $result5->fetch_assoc();}
@@ -283,24 +272,21 @@
                 </div>
 
                 
-                <!-- /.container -->
+               
 
             </div>
              <?php $row3 = $result3->fetch_assoc();}
 					?>
-            <!-- *** GET INSPIRED ***
- _________________________________________________________ -->
+
            
 
-            <!-- *** BLOG HOMEPAGE ***
- _________________________________________________________ -->
 
             <div class="box text-center" data-animate="fadeInUp">
                 <div class="container">
                     <div class="col-md-12">
-                        <h3 class="text-uppercase">Grab products for lowest prices</h3>
+                        <h3 class="text-uppercase">Sở hữu sản phẩm có giá ưu đãi.</h3>
 
-                        <p class="lead">Start Bidding Keep on Winning 
+                        <p class="lead">Bắt đầu đấu giá để dành chiến thắng
                         </p>
                     </div>
                 </div>

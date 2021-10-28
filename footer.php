@@ -5,16 +5,16 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 col-sm-6">
-                        <h4>Pages</h4>
+                        <h4>Trang</h4>
 
                         <ul>
-                            <li><a href="text.html">About us</a>
+                            <li><a href="text.html">Về chúng tôi</a>
                             </li>
-                            <li><a href="text.html">Terms and conditions</a>
+                            <li><a href="text.html">Các điều khoản và điều kiện</a>
                             </li>
-                            <li><a href="faq.html">FAQ</a>
+                            <li><a href="faq.html">Câu hỏi</a>
                             </li>
-                            <li><a href="contact.html">Contact us</a>
+                            <li><a href="contact.html">Kết nối với chúng tôi</a>
                             </li>
                         </ul>
 
@@ -29,10 +29,10 @@
 
                     <div class="col-md-3 col-sm-6">
 
-                        <h4>Contact Us</h4>
+                        <h4>Kết nối với chúng tôi</h4>
 
-                        <h5>+947772336598</h5>
-                        <h5>+947772645468</h5>
+                        <h5>0912345678</h5>
+                        <h5>tlu@gmail.com</h5>
 
                         
 
@@ -43,16 +43,14 @@
 
                     <div class="col-md-3 col-sm-6">
 
-                        <h4>Where to find us</h4>
+                        <h4>Địa chỉ</h4>
 
-                        <p><strong>Bid Now</strong>
-                            <br>13/25 New Avenue
-                            <br>Peradeniya
-                            <br>kandy
-                            <br>Sri Lanka
+                        <p><strong>Đấu giá ngay bây giờ</strong>
+                            <br>175 Tây Sơn, Đống Đa, Hà Nội
+                            
                         </p>
 
-                        <a href="contact.php">Go to contact page</a>
+                        <a href="contact.php">Liên hệ với chúng tôi</a>
 
                         <hr class="hidden-md hidden-lg">
 
@@ -63,12 +61,12 @@
 
                     <div class="col-md-3 col-sm-6">
 
-                          <h4>User section</h4>
+                          <h4>Người dùng</h4>
 
                         <ul>
-                            <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a>
+                            <li><a href="#" data-toggle="modal" data-target="#login-modal">Đăng nhập</a>
                             </li>
-                            <li><a href="register.html">Regiter</a>
+                            <li><a href="register.html">Đăng ký</a>
                             </li>
                         </ul>
 
@@ -100,7 +98,7 @@
         <div id="copyright">
             <div class="container">
                 <div class="col-md-6">
-                    <p class="pull-left">© 2016 Bid Now</p>
+                    <p class="pull-left">© Đấu giá TLU</p>
 
                 </div>
                 
