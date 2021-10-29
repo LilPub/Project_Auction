@@ -76,7 +76,7 @@
                    <div class="panel panel-default sidebar-menu">
 
                         <div class="panel-heading">
-                            <h3 class="panel-title">Categories</h3>
+                            <h3 class="panel-title">Thể loại</h3>
                         </div>
 
                         <div class="panel-body">
@@ -115,13 +115,13 @@
                 <div class="col-md-9">
                     <div class="box">
                         <h1><?php echo $CategoryName['Category'];?></h1>
-                        <p>Bid on a wide range of items. Purchase them for the lowest prices!</p>
+                        <p>Đấu giá trên nhiều loại mặt hàng. Mua chúng với giá thấp nhất!</p>
                     </div>
 
                     <div class="box info-bar">
                         <div class="row">
                             <div class="col-sm-12 col-md-4 products-showing">
-                                Showing <strong>12</strong> of <strong>25</strong> products
+                                Hiển thị <strong>12</strong> / <strong>25</strong> sản phẩm
                             </div>
 
                             <div class="col-sm-12 col-md-8  products-number-sort">
@@ -129,15 +129,15 @@
                                     <form class="form-inline">
                                         <div class="col-md-6 col-sm-6">
                                             <div class="products-number">
-                                                <strong>Show</strong>  <a href="#" class="btn btn-default btn-sm btn-primary">12</a>  <a href="#" class="btn btn-default btn-sm">24</a>  <a href="#" class="btn btn-default btn-sm">All</a> products
+                                                <strong>Hiển thị</strong>  <a href="#" class="btn btn-default btn-sm btn-primary">12</a>  <a href="#" class="btn btn-default btn-sm">24</a>  <a href="#" class="btn btn-default btn-sm">Tất cả</a>
                                             </div>
                                         </div>
                                         <div class="col-md-6 col-sm-6">
                                             <div class="products-sort-by">
-                                                <strong>Sort by</strong>
+                                                <strong>Sắp xếp theo</strong>
                                                 <select name="sort-by" class="form-control">
-                                                    <option>Price</option>
-                                                    <option>Name</option>
+                                                    <option>Giá</option>
+                                                    <option>Tên</option>
                                                     <option>Sales first</option>
                                                 </select>
                                             </div>
