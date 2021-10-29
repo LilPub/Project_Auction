@@ -294,16 +294,16 @@
 
            
 
-            <!-- *** BLOG HOMEPAGE END *** -->
+            
 
 
         </div>
-        <!-- /#content -->
+     
 
        <?php include 'footer.php';?>
     
 
-    <!-- *** SCRIPTS TO INCLUDE ***
+
  _________________________________________________________ -->
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
