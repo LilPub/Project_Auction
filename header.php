@@ -83,7 +83,7 @@
                 </ul>
 
             </div>
-            <!--/.nav-collapse -->
+       
 
             <div class="navbar-buttons">
 
@@ -91,7 +91,7 @@
                 <div class="navbar-collapse collapse right" id="basket-overview">
                     <a href="addlisting.php" class="btn btn-primary navbar-btn"><span class="hidden-sm">Đấu giá</span></a>
                 </div>
-                <!--/.nav-collapse -->
+                
 
                 <div class="navbar-collapse collapse right" id="search-not-mobile">
                     <button type="button" class="btn navbar-btn btn-primary" data-toggle="collapse" data-target="#search">
@@ -116,12 +116,12 @@
                 </form>
 
             </div>
-            <!--/.nav-collapse -->
+           
 
         </div>
-        <!-- /.container -->
+      
     </div>
-    <!-- /#navbar -->
 
-    <!-- *** NAVBAR END *** -->
+
+  
 
