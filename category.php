@@ -138,7 +138,7 @@
                                                 <select name="sort-by" class="form-control">
                                                     <option>Giá</option>
                                                     <option>Tên</option>
-                                                    <option>Sales first</option>
+                                                    <option>Bán hàng trước</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -177,10 +177,10 @@
                                 </a>
                                 <div class="text">
                                     <h3><a href="detail.php?ItemNo=<?php echo $list['ItemID'] ?>"><?php echo $list['ItemName'] ?></a></h3>
-                                    <p class="price">Rs : <?php echo number_format($list['CurrentPrice'],2);?></p>
+                                    <p class="price">Giá : <?php echo number_format($list['CurrentPrice']);?></p>
                                     <p class="buttons">
-                                        <a href="detail.php?ItemNo=<?php echo $list['ItemID'] ?>" class="btn btn-default">View detail</a>
-                                        <a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Buy Now</a>
+                                        <a href="detail.php?ItemNo=<?php echo $list['ItemID'] ?>" class="btn btn-default">Xem chi tiết</a>
+                                        <a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Mua ngay</a>
                                     </p>
                                 </div>
                                 <!-- /.text -->
@@ -199,7 +199,7 @@
                     <div class="pages">
 
                         <p class="loadMore">
-                            <a href="#" class="btn btn-primary btn-lg"><i class="fa fa-chevron-down"></i> Load more</a>
+                            <a href="#" class="btn btn-primary btn-lg"><i class="fa fa-chevron-down"></i> Tải thêm</a>
                         </p>
 
                         <ul class="pagination">
