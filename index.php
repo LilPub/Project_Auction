@@ -181,7 +181,7 @@
                                 </a>
                                 <div class="text">
                                     <h3><a href="detail.php?ItemNo=<?php echo $row['ItemID'] ?>"><?php echo $row['ItemName']?></a></h3>
-                                    <p class="price">Rs : <?php echo number_format($row['CurrentPrice'],2)?></p>
+                                    <p class="price">Rs : <?php echo number_format($row['CurrentPrice'])?></p>
 									
 
                                 </div>
@@ -256,7 +256,7 @@
                                 </a>
                                 <div class="text">
                                     <h3><a href="detail.php?ItemNo=<?php echo $row5['ItemID'] ?>"><?php echo $row5['ItemName']?></a></h3>
-                                    <p class="price">Giá : <?php echo number_format($row5['CurrentPrice'],2)?></p>
+                                    <p class="price">Giá : <?php echo number_format($row5['CurrentPrice'])?></p>
 									
 
                                 </div>

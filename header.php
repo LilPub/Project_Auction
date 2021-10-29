@@ -16,12 +16,12 @@
                         echo '
                         <li><i style="color:white; margin-right:5px" class="fa fa-user" aria-hidden="true"></i>
                         	<a href="userItems.php">'.$_SESSION["username"].'</a></li>
-                        <li><a href="logout.php">Logout</a></li>
+                        <li><a href="logout.php">Đăng xuất</a></li>
                         ';
                     } else {
                         echo '
-                        <li><a href="register.php">Login</a></li>
-                        <li><a href="register.php">Register</a></li>
+                        <li><a href="register.php">Đăng nhập</a></li>
+                        <li><a href="register.php">Đăng ký</a></li>
                         ';
                     }
                     ?>
@@ -89,7 +89,7 @@
 
                 
                 <div class="navbar-collapse collapse right" id="basket-overview">
-                    <a href="addlisting.php" class="btn btn-primary navbar-btn"><span class="hidden-sm">Add Listing</span></a>
+                    <a href="addlisting.php" class="btn btn-primary navbar-btn"><span class="hidden-sm">Đấu giá</span></a>
                 </div>
                 <!--/.nav-collapse -->
 
@@ -106,7 +106,7 @@
 
                 <form class="navbar-form" role="search" action="results.php" method="POST">
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search" name="keyword">
+                        <input type="text" class="form-control" placeholder="Tìm kiếm" name="keyword">
                         <span class="input-group-btn">
 
             <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
