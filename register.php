@@ -20,9 +20,6 @@ if(isset($_SESSION['userid'])){
     <meta name="author" content="Ondrej Svestka | ondrejsvestka.cz">
     <meta name="keywords" content="">
 
-    <title>
-        Obaju : e-commerce template
-    </title>
 
     <meta name="keywords" content="">
 
@@ -62,20 +59,20 @@ if(isset($_SESSION['userid'])){
                 <div class="col-md-12">
 
                     <ul class="breadcrumb">
-                        <li><a href="#">Home</a>
+                        <li><a href="#">Trang chủ</a>
                         </li>
-                        <li>New account / Sign in</li>
+                        <li>Đăng ký / Đăng nhập</li>
                     </ul>
 
                 </div>
 
                 <div class="col-md-6">
                     <div class="box">
-                        <h1>New account</h1>
+                        <h1>Đăng ký</h1>
 
-                        <p class="lead">Not our registered customer yet?</p>
-                        <p>With registration with us new world of fashion, fantastic discounts and much more opens to you! The whole process will not take you more than a minute!</p>
-                        <p class="text-muted">If you have any questions, please feel free to <a href="contact.html">contact us</a>, our customer service center is working for you 24/7.</p>
+                        <p class="lead">Bạn chưa có tài khoản?</p>
+                        <p>Hãy đăng ký và tham gia với chúng tôi để nhận được nhiều khuyến mãi! Toàn bộ quá trình đăng ký mất không quá một phút!</p>
+                        <p class="text-muted">Nếu bạn có bất kỳ câu hỏi nào, <a href="contact.html">trung tâm chăm sóc khách hàng của chúng tôi hoạt động 24/7.</p>
 
                         <hr>
                         <?php
@@ -98,31 +95,31 @@ if(isset($_SESSION['userid'])){
 
                         <form action="process_register.php" method="post">
                             <div class="form-group">
-                                <label for="fname">First Name</label>
+                                <label for="fname">Họ(Tên đệm)</label>
                                 <input type="text" class="form-control" id="fname" name="fname">
                             </div>
                             <div class="form-group">
-                                <label for="lname">Last Name</label>
+                                <label for="lname">Tên</label>
                                 <input type="text" class="form-control" id="lname" name="lname">
                             </div>
                             <div class="form-group">
-                                <label for="addr">Address</label>
+                                <label for="addr">Địa chỉ</label>
                                 <input type="text" class="form-control" id="addr" name="addr">
                             </div>
                             <div class="form-group">
-                                <label for="cno">Contact Number</label>
+                                <label for="cno">Số điện thoại</label>
                                 <input type="text" class="form-control" id="cno" name="cno">
                             </div>
                             <div class="form-group">
-                                <label for="username">Username</label>
+                                <label for="username">Tài khoản</label>
                                 <input type="text" class="form-control" id="username" name="username">
                             </div>
                             <div class="form-group">
-                                <label for="password">Password</label>
+                                <label for="password">Mật khẩu</label>
                                 <input type="password" class="form-control" id="password" name="password">
                             </div>
                             <div class="text-center">
-                                <button type="submit" name="register" class="btn btn-primary"><i class="fa fa-user-md"></i> Register</button>
+                                <button type="submit" name="register" class="btn btn-primary"><i class="fa fa-user-md"></i> Đăng ký</button>
                             </div>
                         </form>
 
@@ -132,11 +129,11 @@ if(isset($_SESSION['userid'])){
 
                 <div class="col-md-6">
                     <div class="box">
-                        <h1>Login</h1>
+                        <h1>Đăng nhập</h1>
 
-                        <p class="lead">Already our customer?</p>
+                        <!-- <p class="lead">Bạn đã có tài khoản?</p>
                         <p class="text-muted">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies
-                            mi vitae est. Mauris placerat eleifend leo.</p>
+                            mi vitae est. Mauris placerat eleifend leo.</p> -->
 
                         <hr>
 
@@ -151,15 +148,15 @@ if(isset($_SESSION['userid'])){
                         ?>
                         <form action="process_login.php" method="post">
                             <div class="form-group">
-                                <label for="email">Username</label>
+                                <label for="email">Tài khoản</label>
                                 <input type="text" class="form-control" id="email" name="username">
                             </div>
                             <div class="form-group">
-                                <label for="password">Password</label>
+                                <label for="password">Mật khẩu</label>
                                 <input type="password" class="form-control" id="password" name="password">
                             </div>
                             <div class="text-center">
-                                <button type="submit" name="cmdlogin" class="btn btn-primary"><i class="fa fa-sign-in"></i> Log in</button>
+                                <button type="submit" name="cmdlogin" class="btn btn-primary"><i class="fa fa-sign-in"></i> Đăng nhập</button>
                             </div>
                         </form>
                     </div>
