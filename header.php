@@ -15,7 +15,7 @@
                     if(isset($_SESSION['username'])) {
                         echo '
                         <li><i style="color:white; margin-right:5px" class="fa fa-user" aria-hidden="true"></i>
-                        	<a href="userItems.php">'.$_SESSION["username"].'</a></li>
+                        	<a href="userItems.php?CategoryID=admin">'.$_SESSION["username"].'</a></li>
                         <li><a href="logout.php">Đăng xuất</a></li>
                         ';
                     } else {
