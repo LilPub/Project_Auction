@@ -169,7 +169,7 @@ if(!isset($_SESSION['userid'])){
                                             <td><?php echo $infoItem['EndTime']; ?> </td>
                                             <td class="d-flex">
                                                 <a href="process_delete.php?ItemID=<?php echo $infoItem['ItemID']; ?>"><button style="margin-left:4px;"><i class="fas fa-trash-alt"></i></button></a>
-                                                <a href=""><button><i class="fas fa-edit"></i></button></a>
+                                                <a href="process_update.php?ItemID=<?php echo $infoItem['ItemID']; ?>"><button><i class="fas fa-edit"></i></button></a>
                                             </td>
                                         </tr>
                                         <?php
