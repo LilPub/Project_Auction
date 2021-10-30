@@ -142,6 +142,7 @@ if(!isset($_SESSION['userid'])){
                             $result2 = mysqli_query($db, $query2);
                             $infoItem = mysqli_fetch_array($result2);
                             ?>
+                            <a href=""><button class="create-btn">+ Thêm mới</button></a>
                             <table class="table table-bordered tableNew">
                                     <thead class="">
                                         <tr>
@@ -167,8 +168,8 @@ if(!isset($_SESSION['userid'])){
                                             <td><?php echo $infoItem['Description']; ?> </td>
                                             <td><?php echo $infoItem['EndTime']; ?> </td>
                                             <td class="d-flex">
-                                                <button style="margin-left:4px;"><i class="fas fa-trash-alt"></i></button>
-                                                <button><i class="fas fa-edit"></i></button>
+                                                <a href="process_delete.php?ItemID=<?php echo $infoItem['ItemID']; ?>"><button style="margin-left:4px;"><i class="fas fa-trash-alt"></i></button></a>
+                                                <a href=""><button><i class="fas fa-edit"></i></button></a>
                                             </td>
                                         </tr>
                                         <?php
