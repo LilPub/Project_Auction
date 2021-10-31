@@ -32,8 +32,7 @@
     </div>
 
 
-    <!-- *** NAVBAR ***
- _________________________________________________________ -->
+
 
     <div class="navbar navbar-default yamm" role="navigation" id="navbar">
         <div class="container">
@@ -59,7 +58,7 @@
                    
                 </div>
             </div>
-            <!--/.navbar-header -->
+         
 
             <div class="navbar-collapse collapse" id="navigation">
 
