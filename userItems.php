@@ -187,15 +187,17 @@ if(!isset($_SESSION['userid'])){
                             $result2 = mysqli_query($db, $query2);
                             $infoItem = mysqli_fetch_array($result2);
                             ?>
+                                <a href="process_create.php"><button class="create-btn">+ Thêm mới</button></a>
                                 <table class="table table-bordered tableNew">
                                     <thead class="">
                                         <tr>
-                                            <th scope="col" width="1%">ID</th>
+                                        <th scope="col" width="1%">ID</th>
                                             <th scope="col" width="14%">Tên Sản phẩm</th>
                                             <th scope="col" width="13%">Giá khởi điểm</th>
                                             <th scope="col" width="13%">Giá mua đứt</th>
-                                            <th scope="col" width="46%">Thông tin</th>
+                                            <th scope="col" width="35%">Thông tin</th>
                                             <th scope="col" width="13%">Ngày kết thúc</th>
+                                            <th scope="col" width="11%">Chức năng</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -210,6 +212,10 @@ if(!isset($_SESSION['userid'])){
                                             <td><?php echo $infoItem['ExpectedPrice']; ?> </td>
                                             <td><?php echo $infoItem['Description']; ?> </td>
                                             <td><?php echo $infoItem['EndTime']; ?> </td>
+                                            <td class="d-flex">
+                                                <a href="process_delete.php?ItemID=<?php echo $infoItem['ItemID']; ?>"><button style="margin-left:4px;"><i class="fas fa-trash-alt"></i></button></a>
+                                                <a href="process_update.php?ItemID=<?php echo $infoItem['ItemID']; ?>"><button><i class="fas fa-edit"></i></button></a>
+                                            </td>
                                         </tr>
                                         <?php
                                             $infoItem = mysqli_fetch_array($result2);
