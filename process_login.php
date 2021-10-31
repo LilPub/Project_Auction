@@ -38,7 +38,7 @@ if (!isset($_SESSION['loginid']) || !isset($_SESSION['username']))
     }
  
 } else {
-	 // The user is already loggedin, so we show the home page.
+
     header("location:index.php");
 }
 ?>
