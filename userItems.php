@@ -142,7 +142,7 @@ if(!isset($_SESSION['userid'])){
                             $result2 = mysqli_query($db, $query2);
                             $infoItem = mysqli_fetch_array($result2);
                             ?>
-                            <a href=""><button class="create-btn">+ Thêm mới</button></a>
+                            <a href="process_create.php"><button class="create-btn">+ Thêm mới</button></a>
                             <table class="table table-bordered tableNew">
                                     <thead class="">
                                         <tr>
