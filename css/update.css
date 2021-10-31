@@ -1,12 +1,13 @@
 .content{
-    margin-top: 30px;
+    margin-top: -20px;
     margin-left: 30px;
+    display: flex;
 }
 h2{
     margin-left: 10px;
 }
 i{
-    margin-top: 5px;
+    margin-top: 20px;
 }
 .form{
     margin-top: 15px;
@@ -15,21 +16,24 @@ i{
 label{
     display: flex;
 }
-span{
-    width: 180px;
-    font-size: 18px;
+label span{
+    width: 165px;
+    font-size: 17px;
     font-family: "AdihausDIN",Helvetica, Arial, sans-serif;
 }
 input{
     border: 2px solid black;
     border-radius: 5px;
     width: 300px;
-    height: 37px;
+    height: 33px;
+    margin-top: -3px;
 }
 select{
     border: 2px solid black;
     border-radius: 5px;
-    height: 37px;
+    height: 33px;
+    margin-top: -3px;
+    
 }
 .update-btn{
     width: 120px;
@@ -37,6 +41,7 @@ select{
     border: 0;
     background-color: #4fbfa8;
     color: white;
+    margin-bottom: 30px;
 }
 textarea{
     border: 2px solid black;
