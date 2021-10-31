@@ -64,7 +64,7 @@
 
                 <div class="col-md-12">
                     <ul class="breadcrumb">
-                        <li><a href="#">Trang chủ</a>
+                        <li><a href="index.php">Trang chủ</a>
                         </li>
                         <li><?php echo $CategoryName['Category'];?></li>
                     </ul>
