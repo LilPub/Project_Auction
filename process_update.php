@@ -40,6 +40,10 @@
                 <input type="text" value="<?php echo $info['ExpectedPrice']; ?>" name="ExpectedPrice">
             </label><br/>
             <label for="">
+                <span>Giá đấu giá: </span>
+                <input type="text" value="<?php echo $info['CurrentPrice']; ?>" name="CurrentPrice">
+            </label><br/>
+            <label for="">
                 <span >Thông tin: </span>
                 <textarea type="text" name="Description" cols="40" rows="6"><?php echo $info['Description']; ?></textarea>
             </label><br/>
@@ -55,6 +59,7 @@
                     $ItemName = $_POST['ItemName'];
                     $StartingPrice = $_POST['StartingPrice'];
                     $ExpectedPrice = $_POST['ExpectedPrice'];
+                    $CurrentPrice = $_POST['CurrentPrice'];
                     $Description = $_POST['Description'];
                     $EndTime = $_POST['EndTime'];
                     
@@ -62,7 +67,7 @@
                     if(!$db){
                         die('Kết nối thất bại');
                     }
-                    $sql2 = "UPDATE `item` SET ItemName='$ItemName',StartingPrice = '$StartingPrice', ExpectedPrice='$ExpectedPrice', Description='$Description', EndTime='$EndTime' WHERE ItemID='$ItemID'";
+                    $sql2 = "UPDATE `item` SET ItemName='$ItemName',StartingPrice = '$StartingPrice', ExpectedPrice='$ExpectedPrice', CurrentPrice='$CurrentPrice', Description='$Description', EndTime='$EndTime' WHERE ItemID='$ItemID'";
                     if(mysqli_query($db,$sql2)){
                         echo "Thay đổi thành công";
                     }else{
