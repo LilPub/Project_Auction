@@ -2,13 +2,18 @@
     margin-top: 30px;
     margin-left: 30px;
 }
+h2{
+    margin-left: 10px;
+}
+i{
+    margin-top: 5px;
+}
 .form{
     margin-top: 15px;
     margin-left: 30px;
 }
 label{
     display: flex;
-    margin-top: 20px;
 }
 span{
     width: 180px;
@@ -19,6 +24,11 @@ input{
     border: 2px solid black;
     border-radius: 5px;
     width: 300px;
+    height: 37px;
+}
+select{
+    border: 2px solid black;
+    border-radius: 5px;
     height: 37px;
 }
 .update-btn{
