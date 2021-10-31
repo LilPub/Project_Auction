@@ -12,24 +12,21 @@
     <meta name="keywords" content="">
 
     <title>
-        Obaju : e-commerce template
+        Đấu giá TLU
     </title>
 
     <meta name="keywords" content="">
 
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100' rel='stylesheet' type='text/css'>
 
-    <!-- styles -->
     <link href="css/font-awesome.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
     <link href="css/owl.carousel.css" rel="stylesheet">
     <link href="css/owl.theme.css" rel="stylesheet">
 
-    <!-- theme stylesheet -->
     <link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet">
 
-    <!-- your stylesheet with modifications -->
     <link href="css/custom.css" rel="stylesheet">
 
     <script src="js/respond.min.js"></script>
@@ -43,7 +40,7 @@
 <body>
 
    <?php $db = mysqli_connect('localhost','root','','shop')
-            or die('Error connecting to MySQL server.'); 
+            or die('Kết nối thất bại'); 
 
             $query1 = "SELECT * FROM category ";
             $result1 = mysqli_query($db, $query1);
@@ -54,7 +51,6 @@
              
              ?>
 
-    <!-- *** NAVBAR END *** -->
 
     <div id="all">
 
@@ -63,32 +59,31 @@
 
                 <div class="col-md-12">
                     <ul class="breadcrumb">
-                        <li><a href="#">Home</a>
+                        <li><a href="#">Trang chủ</a>
                         </li>
-                        <li>FAQ</li>
+                        <li>Câu hỏi thường gặp</li>
                     </ul>
 
                 </div>
 
                 <div class="col-md-3">
-                    <!-- *** PAGES MENU ***
- _________________________________________________________ -->
+
                    <div class="panel panel-default sidebar-menu">
 
                         <div class="panel-heading">
-                            <h3 class="panel-title">Quick Links</h3>
+                            <h3 class="panel-title">Liên kết</h3>
                         </div>
 
                         <div class="panel-body">
                             <ul class="nav nav-pills nav-stacked">
                                 <li>
-                                    <a href="index.php">Home</a>
+                                    <a href="index.php">Trang chủ</a>
                                 </li>
                                 <li>
-                                    <a href="contact.php">Contact Us</a>
+                                    <a href="contact.php">Kết nối với chúng tôi</a>
                                 </li>
                                 <li>
-                                    <a href="faq.php">FAQ</a>
+                                    <a href="faq.php">Câu hỏi thường gặp</a>
                                 </li>
 
                             </ul>
@@ -96,7 +91,6 @@
                         </div>
                     </div>
 
-                    <!-- *** PAGES MENU END *** -->
 
 
                     <div class="banner">
@@ -110,10 +104,10 @@
 
 
                     <div class="box" id="contact">
-                        <h1>Frequently asked questions</h1>
+                        <h1>Các câu hỏi thường gặp</h1>
 
-                        <p class="lead">Are you curious about something? Do you have some kind of problem with our products?</p>
-                        <p>Please feel free to contact us, our customer service center is working for you 24/7.</p>
+                        <p class="lead">Bạn có tò mò về điều gì đó không? Bạn có một số loại vấn đề với sản phẩm của chúng tôi?</p>
+                        <p>Xin vui lòng liên hệ với chúng tôi, trung tâm dịch vụ khách hàng của chúng tôi đang làm việc 24/7.</p>
 
                         <hr>
 
@@ -125,7 +119,7 @@
 
 					    <a data-toggle="collapse" data-parent="#accordion" href="#faq1">
 
-						1. What to do if I have still not received the order?
+						1. Phải làm gì nếu tôi vẫn chưa nhận được đơn đặt hàng?
 
 					    </a>
 
@@ -133,17 +127,14 @@
                                 </div>
                                 <div id="faq1" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
-                                            Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-                                        <ul>
-                                            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                                            <li>Aliquam tincidunt mauris eu risus.</li>
-                                            <li>Vestibulum auctor dapibus neque.</li>
+                                            <li>Liên hệ trực tiếp với chúng tôi qua website.</li>
+                                            <li>Phản hồi lại với chúng tôi qua Email.</li>
+                                            <li>Liên hệ với tổng đài của website.</li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-                            <!-- /.panel -->
+
 
                             <div class="panel panel-primary">
                                 <div class="panel-heading">
@@ -151,7 +142,7 @@
 
 					    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
 
-						2. What are the postal rates?
+						2. Giá vận chuyển sản phẩm qua bưu điện?
 
 					    </a>
 
@@ -159,13 +150,11 @@
                                 </div>
                                 <div id="collapseTwo" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                                        on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
-                                        craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                       Chúng tôi sẽ phụ thuộc vào quãng đường vận chuyển và một vài yếu tố về sản phẩm để quyết định giá vận chuyển cho bạn.
                                     </div>
                                 </div>
                             </div>
-                            <!-- /.panel -->
+
 
 
                             <div class="panel panel-primary">
@@ -174,7 +163,7 @@
 
 					    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
 
-						3. Do you send overseas?
+						3. Bạn có gửi ở nước ngoài không?
 
 					    </a>
 
@@ -182,40 +171,38 @@
                                 </div>
                                 <div id="collapseThree" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                                        on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
-                                        craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        Chúng tôi hỗ trợ đầy đủ yêu cầu của bạn khi bạn muốn sở hữu sản phẩm của chúng tôi.
                                     </div>
                                 </div>
                             </div>
-                            <!-- /.panel -->
+
 
                         </div>
-                        <!-- /.panel-group -->
+
 
 
                     </div>
 
 
                 </div>
-                <!-- /.col-md-9 -->
+
             </div>
-            <!-- /.container -->
+
         </div>
-        <!-- /#content -->
+
 
     <?php include 'footer.php';?>
 
 
 
     </div>
-    <!-- /#all -->
+
 
 
     
 
-    <!-- *** SCRIPTS TO INCLUDE ***
- _________________________________________________________ -->
+
+ 
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.cookie.js"></script>
