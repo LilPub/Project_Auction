@@ -9,7 +9,7 @@ session_start();
         $username = strip_tags($_POST['username']);
         $password = md5(strip_tags($_POST['password']));
 
-        //check whether there's already a user having the same username
+        
         $db = mysqli_connect('localhost','root','','shop')
                 or die('Error connecting to MySQL server.'); 
         $query = "SELECT UserID FROM user WHERE Username = '$username' LIMIT 1";
