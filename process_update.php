@@ -47,6 +47,7 @@ if(!isset($_SESSION['userid'])){
 </head>
 <body>
     <?php 
+        ob_start();
         include("header.php");
         $ItemID=$_GET["ItemID"];
         $db = mysqli_connect('localhost','root','','shop');
@@ -86,7 +87,7 @@ if(!isset($_SESSION['userid'])){
             </label><br/>
             <label for="">
                 <span>Thời gian kết thúc: </span>
-                <input type="datetime" value="<?php echo $info['EndTime']; ?>" name="EndTime">
+                <input type="datetime-local" value="<?php echo $info['EndTime']; ?>" name="EndTime">
             </label><br/>
             <input type="submit" value="Thay đổi" name="update-btn" class="update-btn">
 
