@@ -1,3 +1,11 @@
+<?php 
+session_start(); 
+
+if(!isset($_SESSION['userid'])){
+    header('Location: index.php');
+}  
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,6 +47,7 @@
 </head>
 <body>
     <?php
+        ob_start();
         include("header.php");
     ?>
     <div class="content d-flex">
@@ -89,7 +98,7 @@
             </label><br/>
             <label for="">
                 <span>Thời gian kết thúc: </span>
-                <input type="datetime" name="EndTime" placeholder="eg: 2021-10-04 00:00:00">
+                <input type="datetime-local" name="EndTime" placeholder="eg: 2021-10-04 00:00:00">
             </label><br/>
             <input type="submit" value="Tạo mới" name="create-btn" class="update-btn">
 
