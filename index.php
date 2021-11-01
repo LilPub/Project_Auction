@@ -73,10 +73,10 @@
                 <div class="col-md-12">
                     <div id="main-slider">
                         <div class="item">
-                            <img src="img/main-slider1.jpg" alt="" class="img-responsive">
+                            <img src="img/main-slider5.jpg" alt="" class="img-responsive">
                         </div>
                         <div class="item">
-                            <img class="img-responsive" src="img/main-slider2.jpg" alt="">
+                            <img class="img-responsive" src="img/blog2.jpg" alt="" style="height: 519.83px">
                         </div>
                         <div class="item">
                             <img class="img-responsive" src="img/main-slider3.jpg" alt="">
