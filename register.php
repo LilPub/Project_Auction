@@ -111,6 +111,10 @@ if(isset($_SESSION['userid'])){
                                 <input type="text" class="form-control" id="cno" name="cno">
                             </div>
                             <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email">
+                            </div>
+                            <div class="form-group">
                                 <label for="username">Tài khoản</label>
                                 <input type="text" class="form-control" id="username" name="username">
                             </div>

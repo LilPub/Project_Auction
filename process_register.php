@@ -1,5 +1,12 @@
 <?php
-session_start(); 
+session_start();
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\SMTP;
+    use PHPMailer\PHPMailer\Exception;
+
+    require 'Exception.php';
+    require 'PHPMailer.php';
+    require 'SMTP.php';
     if (isset($_POST['register']))
     {
         $fname = $_POST['fname'];
@@ -30,4 +37,3 @@ session_start();
             header("location:register.php?err=2");
         }
     }
-?>
