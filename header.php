@@ -39,7 +39,7 @@
             <div class="navbar-header">
 
                 <a class="navbar-brand home" href="index.php" data-animate-hover="bounce">
-                   <img height="50px" src="img/logo.png" alt="Obaju logo" class="hidden-xs">
+                   <img height="50px" src="img/logoTLU1.png" alt="Obaju logo" class="hidden-xs">
                     <img src="img/logo-small.png" alt="Obaju logo" class="visible-xs"><span class="sr-only">Obaju - go to homepage</span>
                 </a>
                 <div class="navbar-buttons">
