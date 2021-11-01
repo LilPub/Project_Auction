@@ -76,10 +76,10 @@
                             <img src="img/main-slider5.jpg" alt="" class="img-responsive">
                         </div>
                         <div class="item">
-                            <img class="img-responsive" src="img/blog2.jpg" alt="" style="height: 519.83px">
+                            <img class="img-responsive" src="img/main-slider3.jpg" alt="">
                         </div>
                         <div class="item">
-                            <img class="img-responsive" src="img/main-slider3.jpg" alt="">
+                            <img class="img-responsive" src="img/blog2.jpg" alt="" style="height: 519.83px">
                         </div>
                         
                     </div>
