@@ -59,25 +59,7 @@
 
 
 
-                    <div class="col-md-3 col-sm-6">
-
-                          <h4>Người dùng</h4>
-
-                        <ul>
-                            <li><a href="#" data-toggle="modal" data-target="#login-modal">Đăng nhập</a>
-                            </li>
-                            <li><a href="register.html">Đăng ký</a>
-                            </li>
-                        </ul>
-
-                            </div>
-                            <!-- /input-group -->
-                        </form>
-
-                        <hr>
-
-                    
-                    </div>
+                   
                     <!-- /.col-md-3 -->
 
                 </div>
