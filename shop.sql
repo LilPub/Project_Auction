@@ -31,7 +31,7 @@ CREATE TABLE `bids` (
   `ItemID` int(5) NOT NULL,
   `BidderID` int(4) NOT NULL,
   `BidAmount` int(6) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Đang đổ dữ liệu cho bảng `bids`
@@ -54,7 +54,7 @@ INSERT INTO `bids` (`ItemID`, `BidderID`, `BidAmount`) VALUES
 CREATE TABLE `category` (
   `CategoryID` int(10) NOT NULL,
   `Category` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Đang đổ dữ liệu cho bảng `category`
@@ -80,7 +80,7 @@ CREATE TABLE `feedbackprofile` (
   `InvoiceNumber` int(6) NOT NULL,
   `Positive` tinyint(1) NOT NULL,
   `Description` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -99,7 +99,7 @@ CREATE TABLE `item` (
   `Description` varchar(6000) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `CategoryID` int(10) NOT NULL,
   `EndTime` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Đang đổ dữ liệu cho bảng `item`
@@ -162,7 +162,7 @@ CREATE TABLE `message` (
   `ReceiverID` int(6) NOT NULL,
   `Topic` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `Body` varchar(1500) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -437,7 +437,7 @@ CREATE TABLE `solditems` (
   `BuyerID` int(6) NOT NULL,
   `Date` datetime NOT NULL,
   `FinalValue` int(6) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -456,7 +456,7 @@ CREATE TABLE `user` (
   `status` tinyint(4) DEFAULT 0,
   `active` char(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `email` varchar(60) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Đang đổ dữ liệu cho bảng `user`
