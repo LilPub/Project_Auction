@@ -15,7 +15,8 @@ if(mysqli_num_rows($query)==1)
     {
      $active= "UPDATE user SET status = '1' WHERE email='$email'";
      mysqli_query($db,$active); 
-     echo "kích hoạt thành công vui lòng quay lại trang đăng nhập";  
+     echo "kích hoạt thành công vui lòng quay lại trang đăng nhập"; 
+     header("Location:register.php?value='success'"); 
      
     }
 }
