@@ -19,7 +19,9 @@ if(isset($_SESSION['userid'])){
     <meta name="description" content="Obaju e-commerce template">
     <meta name="author" content="Ondrej Svestka | ondrejsvestka.cz">
     <meta name="keywords" content="">
-
+    <title>
+        Đấu giá TLU
+    </title>
 
     <meta name="keywords" content="">
 
@@ -135,9 +137,7 @@ if(isset($_SESSION['userid'])){
                     <div class="box">
                         <h1>Đăng nhập</h1>
 
-                        <!-- <p class="lead">Bạn đã có tài khoản?</p>
-                        <p class="text-muted">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies
-                            mi vitae est. Mauris placerat eleifend leo.</p> -->
+
 
                         <hr>
 

@@ -12,7 +12,7 @@
     <meta name="keywords" content="">
 
     <title>
-        Obaju : e-commerce template
+        Đấu giá TLU
     </title>
 
     <meta name="keywords" content="">

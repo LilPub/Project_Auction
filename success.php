@@ -17,7 +17,9 @@ if(!isset($_SESSION['userid'])){
     <meta name="description" content="Obaju e-commerce template">
     <meta name="author" content="Ondrej Svestka | ondrejsvestka.cz">
     <meta name="keywords" content="">
-
+    <title>
+        Đấu giá TLU
+    </title>
    
 
     <meta name="keywords" content="">

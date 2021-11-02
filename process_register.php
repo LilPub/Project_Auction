@@ -41,9 +41,9 @@ if (isset($_POST['register'])) {
             $mail->Port = 587; // TCP port to connect to
             $mail->CharSet = 'UTF-8';
             //Recipients
-            $mail->setFrom('nghlong011@gmail.com', 'Văn phòng Khoa CNTT - Trường ĐH Thủy lợi');
+            $mail->setFrom('nghlong011@gmail.com', 'Đấu giá TLU');
 
-            $mail->addReplyTo('nghlong011@gmail.com', 'Văn phòng Khoa CNTT - Trường ĐH Thủy lợi');
+            $mail->addReplyTo('nghlong011@gmail.com', 'Đấu giá TLU');
 
             $mail->addAddress($email); // Add a recipient
 
