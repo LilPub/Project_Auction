@@ -74,7 +74,7 @@ if(isset($_SESSION['userid'])){
 
                         <p class="lead">Bạn chưa có tài khoản?</p>
                         <p>Hãy đăng ký và tham gia với chúng tôi để nhận được nhiều khuyến mãi! Toàn bộ quá trình đăng ký mất không quá một phút!</p>
-                        <p class="text-muted">Nếu bạn có bất kỳ câu hỏi nào, <a href="contact.html">liên hệ chúng tôi, </a>trung tâm chăm sóc khách hàng của chúng tôi hoạt động 24/7.</p>
+                        <p class="text-muted">Nếu bạn có bất kỳ câu hỏi nào, <a href="contact.php">liên hệ chúng tôi, </a>trung tâm chăm sóc khách hàng của chúng tôi hoạt động 24/7.</p>
 
                         <hr>
                         <?php
