@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 29, 2021 lúc 04:42 PM
+-- Thời gian đã tạo: Th10 02, 2021 lúc 11:28 AM
 -- Phiên bản máy phục vụ: 10.4.21-MariaDB
 -- Phiên bản PHP: 8.0.10
 
@@ -106,7 +106,7 @@ CREATE TABLE `item` (
 --
 
 INSERT INTO `item` (`ItemID`, `ItemName`, `SellerID`, `StartingPrice`, `ExpectedPrice`, `CurrentPrice`, `PhotosID`, `Description`, `CategoryID`, `EndTime`) VALUES
-(29, 'Apple iPad 2 16GB', NULL, 12000000, 16000000, 13000000, 'img/phone1.jpg', '\r\nApple iPad 2 16GB, Wi-Fi, 9,7 inch - Đen\r\n\r\nSự miêu tả\r\n\r\nIpad này ở trong tình trạng tốt\r\nIPad được kiểm tra đầy đủ và hoạt động hoàn hảo. Pin vẫn đang sạc.\r\nSẽ cho thấy một số vết xước nhỏ, ding hoặc vết lõm nhưng không có gì lớn. Chúng tôi sẽ cho nó 7-8 trên 10\r\nIpad không có trong gói bán lẻ ban đầu. Nó được đóng gói lại trong hộp riêng của chúng tôi.\r\nNó đi kèm với Cáp và Bộ chuyển đổi Tường được Chứng nhận của Apple (Thương hiệu có thể là Apple, Belkin hoặc Rocket-Fish)\r\nĐây là mô hình Wifi. Không cần thẻ Sim.\r\nHướng dẫn sử dụng không được bao gồm và có thể được tải xuống từ trang web của Apple\r\nChúng tôi cung cấp bảo hành 60 ngày\r\n\r\nNhững gì có trong gói?\r\n\r\nApple iPad 2 16GB, Wi-Fi, 9,7 inch - Đen\r\nBộ sạc / Bộ chuyển đổi trên tường được Apple chứng nhận\r\nCáp đồng bộ / dữ liệu được chứng nhận của Apple', 3, '2020-09-02 00:00:00'),
+(29, 'Apple iPad 2 16GB', NULL, 12000000, 16000000, 13000000, 'img/phone1.jpg', '\r\nApple iPad 2 16GB, Wi-Fi, 9,7 inch - Đen\r\n\r\nSự miêu tả\r\n\r\nIpad này ở trong tình trạng tốt\r\nIPad được kiểm tra đầy đủ và hoạt động hoàn hảo. Pin vẫn đang sạc.\r\nSẽ cho thấy một số vết xước nhỏ, ding hoặc vết lõm nhưng không có gì lớn. Chúng tôi sẽ cho nó 7-8 trên 10\r\nIpad không có trong gói bán lẻ ban đầu. Nó được đóng gói lại trong hộp riêng của chúng tôi.\r\nNó đi kèm với Cáp và Bộ chuyển đổi Tường được Chứng nhận của Apple (Thương hiệu có thể là Apple, Belkin hoặc Rocket-Fish)\r\nĐây là mô hình Wifi. Không cần thẻ Sim.\r\nHướng dẫn sử dụng không được bao gồm và có thể được tải xuống từ trang web của Apple\r\nChúng tôi cung cấp bảo hành 60 ngày\r\n\r\nNhững gì có trong gói?\r\n\r\nApple iPad 2 16GB, Wi-Fi, 9,7 inch - Đen\r\nBộ sạc / Bộ chuyển đổi trên tường được Apple chứng nhận\r\nCáp đồng bộ / dữ liệu được chứng nhận của Apple', 3, '2021-11-02 15:00:00'),
 (30, 'Điện thoại thông minh Samsung Galaxy S4 i545 4G LT', NULL, 2150000, 2300000, 2150000, 'img/phone3.jpg', 'Các tính năng nổi bật:\r\n\r\nMàn hình cảm ứng đa điểm điện dung 5 inch Super AMOLED với kính cường lực bảo vệ Corning Gorilla Glass 3\r\n\r\nBộ xử lý Krait 300 lõi tứ 1,9 GHz, Chipset: Qualcomm APQ864T Snapdragon 6, Đồ họa Adreno 320\r\n\r\nMáy ảnh 13 Megapixel (4128 x 3096 pixel) w / Tự động lấy nét, đèn flash LED + Mặt trước 2', 3, '2020-09-08 00:00:00'),
 (31, 'Samsung Galaxy S4 MINI i257 ', NULL, 18000000, 21600000, 18000000, 'img/phone4.jpg', '“Điện thoại di động này là MỚI Trong tình trạng khác, có nghĩa là không có hộp bán lẻ vì nó được nhận với số lượng lớn. Về mặt thẩm mỹ, điện thoại di động ở tình trạng hoàn hảo hoặc gần như hoàn hảo, Màn hình hoàn hảo, có thể có một chút vết xước nhỏ có thể nhìn thấy hoặc không nhìn thấy trên vỏ sau khi vận chuyển, v.v., Điện thoại di động được kiểm tra hoạt động tốt. Điện thoại di động được MỞ KHÓA và sẵn sàng cho tất cả các nhà cung cấp dịch vụ GSM như AT&T, T-Mobile Straight Talk, MetroPCS, v.v. trên thế giới. Nó không hoạt động với bất kỳ nhà cung cấp dịch vụ CDMA nào như Verizon, Sprint, Boost Mobile. Vui lòng liên hệ với chúng tôi nếu có bất kỳ câu hỏi nào. ”', 3, '2020-09-23 00:00:00'),
 (32, 'Apple Iphone 6 Grigio 64Gb', NULL, 5900000, 6390000, 5900000, 'img/phone5.jpg', '“\r\nApple Iphone 6 Grigio 64Gb in buono stato, con custodia e pellicole apply….\r\n\r\nĐiện thoại di động này ở dạng MỚI Tình trạng khác, nghĩa là không có hộp bán lẻ vì nó được nhận với số lượng lớn. Về mặt thẩm mỹ, điện thoại di động ở tình trạng hoàn hảo hoặc gần như hoàn hảo, Màn hình hoàn hảo, có thể có một chút vết xước nhỏ có thể nhìn thấy hoặc không nhìn thấy trên vỏ sau khi vận chuyển, v.v., Điện thoại di động được kiểm tra hoạt động tốt. Điện thoại di động được MỞ KHÓA và sẵn sàng cho tất cả các nhà cung cấp dịch vụ GSM như AT&T, T-Mobile Straight Talk, MetroPCS, v.v. trên thế giới. Nó không hoạt động với bất kỳ nhà cung cấp dịch vụ CDMA nào như Verizon, Sprint, Boost Mobile. Vui lòng liên hệ với chúng tôi nếu có bất kỳ câu hỏi nào. ”', 3, '2020-09-16 00:00:00'),
@@ -147,7 +147,8 @@ INSERT INTO `item` (`ItemID`, `ItemName`, `SellerID`, `StartingPrice`, `Expected
 (67, 'Giày chạy bộ phiên bản cổ điển', NULL, 2900000, 3600000, 2900000, 'img/sh3.jpg', 'Giày chạy bộ cao cấp Nike nam Flyknit Max Air mới\r\n\r\n(Mới với Hộp)\r\n\r\nPhong cách # 620469-404\r\n\r\nMàu: Xanh\r\n\r\nKích thước: 11,5 US, 13 US\r\n\r\nGiữ lại ở mức 3600000\r\n\r\n \r\nMUA CHÚNG VỚI GIÁ 2900000\r\n\r\nPHÍ VẬN CHUYỂN / XỬ LÝ ĐƯỢC MIỄN PHÍ QUA CÁC CÔNG DỤNG TẠI Việt Nam. BỔ SUNG PHÍ VẬN CHUYỂN QUỐC TẾ.\r\n\r\nTÔI SẼ VẬN CHUYỂN NGAY SAU KHI THANH TOÁN ĐƯỢC THỰC HIỆN. TÔI CHẤP NHẬN PAYPAL,', 6, '2021-09-23 00:00:00'),
 (68, 'Boot gia cao cấp giới hạn', NULL, 3700000, 5100000, 3780000, 'img/sh4.jpg', 'Giày chạy bộ cao cấp Nike nam Flyknit Max Air mới\r\n\r\n(Mới với Hộp)\r\n\r\nPhong cách # 620469-404\r\n\r\nMàu: Đen xám\r\n\r\nKích thước: 11,5 US, 13 US\r\n\r\nGiữ lại ở mức 5100000\r\n\r\n \r\nMUA CHÚNG VỚI GIÁ 3780000\r\n\r\nPHÍ VẬN CHUYỂN / XỬ LÝ ĐƯỢC MIỄN PHÍ QUA CÁC CÔNG DỤNG TẠI Việt Nam. BỔ SUNG PHÍ VẬN CHUYỂN QUỐC TẾ.\r\n\r\nTÔI SẼ VẬN CHUYỂN NGAY SAU KHI THANH TOÁN ĐƯỢC THỰC HIỆN. TÔI CHẤP NHẬN PAYPAL,', 6, '2021-09-16 00:00:00'),
 (69, 'Giày cao gót show diễn BP', NULL, 2100000, 2600000, 2100000, 'img/sh5.jpg', 'Giày chạy bộ cao cấp Nike nam Flyknit Max Air mới\r\n\r\n(Mới với Hộp)\r\n\r\nPhong cách # 620469-404\r\n\r\nMàu: Màu pha\r\n\r\nKích thước: 11,5 US, 13 US\r\n\r\nGiữ lại ở mức 2600000\r\n\r\n \r\nMUA CHÚNG VỚI GIÁ 2100000\r\n\r\nPHÍ VẬN CHUYỂN / XỬ LÝ ĐƯỢC MIỄN PHÍ QUA CÁC CÔNG DỤNG TẠI Việt Nam. BỔ SUNG PHÍ VẬN CHUYỂN QUỐC TẾ.\r\n\r\nTÔI SẼ VẬN CHUYỂN NGAY SAU KHI THANH TOÁN ĐƯỢC THỰC HIỆN. TÔI CHẤP NHẬN PAYPAL,', 6, '2021-09-05 00:00:00'),
-(70, 'Sandal phiên bản sự kiện ', NULL, 1900000, 3000000, 2400000, 'img/sh6.jpg', 'Giày chạy bộ cao cấp Nike nam Flyknit Max Air mới\r\n\r\n(Mới với Hộp)\r\n\r\nPhong cách # 620469-404\r\n\r\nMàu: Vàng / Đen\r\n\r\nKích thước: 11,5 US, 13 US\r\n\r\nGiữ lại ở mức 3000000\r\n\r\n \r\nMUA CHÚNG VỚI GIÁ 1900000\r\n\r\nPHÍ VẬN CHUYỂN / XỬ LÝ ĐƯỢC MIỄN PHÍ QUA CÁC CÔNG DỤNG TẠI Việt Nam. BỔ SUNG PHÍ VẬN CHUYỂN QUỐC TẾ.\r\n\r\nTÔI SẼ VẬN CHUYỂN NGAY SAU KHI THANH TOÁN ĐƯỢC THỰC HIỆN. TÔI CHẤP NHẬN PAYPAL,', 6, '2021-11-02 00:00:00');
+(70, 'Sandal phiên bản sự kiện ', NULL, 1900000, 3000000, 2400000, 'img/sh6.jpg', 'Giày chạy bộ cao cấp Nike nam Flyknit Max Air mới\r\n\r\n(Mới với Hộp)\r\n\r\nPhong cách # 620469-404\r\n\r\nMàu: Vàng / Đen\r\n\r\nKích thước: 11,5 US, 13 US\r\n\r\nGiữ lại ở mức 3000000\r\n\r\n \r\nMUA CHÚNG VỚI GIÁ 1900000\r\n\r\nPHÍ VẬN CHUYỂN / XỬ LÝ ĐƯỢC MIỄN PHÍ QUA CÁC CÔNG DỤNG TẠI Việt Nam. BỔ SUNG PHÍ VẬN CHUYỂN QUỐC TẾ.\r\n\r\nTÔI SẼ VẬN CHUYỂN NGAY SAU KHI THANH TOÁN ĐƯỢC THỰC HIỆN. TÔI CHẤP NHẬN PAYPAL,', 6, '2021-11-02 00:00:00'),
+(73, 'iphone', 1, 11111, 1111111, 11111, 'img/iphone1.jpg', '', 1, '2021-11-03 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -447,21 +448,23 @@ CREATE TABLE `solditems` (
 CREATE TABLE `user` (
   `UserID` int(10) NOT NULL,
   `Username` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `Password` varchar(45) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `Password` varchar(60) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `Contact_No` int(10) NOT NULL,
   `Address` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `FName` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `LName` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `status` tinyint(4) DEFAULT 0,
-  `active` char(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL
+  `active` char(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `email` varchar(60) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Đang đổ dữ liệu cho bảng `user`
 --
 
-INSERT INTO `user` (`UserID`, `Username`, `Password`, `Contact_No`, `Address`, `FName`, `LName`, `status`, `active`) VALUES
-(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 111231231, 'ADD', 'Bid', 'Now', 1, NULL);
+INSERT INTO `user` (`UserID`, `Username`, `Password`, `Contact_No`, `Address`, `FName`, `LName`, `status`, `active`, `email`) VALUES
+(6, 'long', '$2y$10$cuY.udIqpavOoI0E7Gc9zOkTwq8bHRWj8IsGLZDkmacbgxLWRD06i', 843906364, '123', 'Nguyễn', 'Long', 1, 'c19f679268a96abf88145774923c7559', 'nghlong011@gmail.com'),
+(9, 'admin', '$2y$10$xjRTNfp6ssx2qZvIXxqHZ.SZfOiILXaUfBVWr4Tcg5SRBqaf28e0y', 843906364, '123', 'Nguyễn', 'Long', 1, '449acb870ffacf72f526fc2d9449b3b0', 'hoanglonglong197@gmail.com');
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -614,7 +617,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT cho bảng `item`
 --
 ALTER TABLE `item`
-  MODIFY `ItemID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=71;
+  MODIFY `ItemID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=74;
 
 --
 -- AUTO_INCREMENT cho bảng `pma__bookmark`
@@ -656,7 +659,7 @@ ALTER TABLE `pma__savedsearches`
 -- AUTO_INCREMENT cho bảng `user`
 --
 ALTER TABLE `user`
-  MODIFY `UserID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `UserID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
