@@ -1,5 +1,5 @@
-<?php 
-session_start(); 
+<?php
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -42,20 +42,20 @@ session_start();
 
 
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-    
+
 </head>
 
 <body>
 
-   <?php $db = mysqli_connect('localhost','root','','shop')
-        or die('Error connecting to MySQL server.'); 
+    <?php $db = mysqli_connect('localhost', 'root', '', 'shop')
+        or die('Error connecting to MySQL server.');
 
-        $query1 = "SELECT * FROM category ";
-        $result1 = mysqli_query($db, $query1);
-        $categories = mysqli_fetch_array($result1);
+    $query1 = "SELECT * FROM category ";
+    $result1 = mysqli_query($db, $query1);
+    $categories = mysqli_fetch_array($result1);
 
     ?>
-    <?php include 'header.php';?>
+    <?php include 'header.php'; ?>
 
     <div id="all">
 
@@ -108,23 +108,23 @@ session_start();
                 </div>
 
                 <div class="col-md-9">
-<?php 
-                                $query1 = "SELECT * FROM category ";
-                                $result1 = mysqli_query($db, $query1);
-                                $categories = mysqli_fetch_array($result1);
+                    <?php
+                    $query1 = "SELECT * FROM category ";
+                    $result1 = mysqli_query($db, $query1);
+                    $categories = mysqli_fetch_array($result1);
 
-                            ?>
+                    ?>
 
                     <div class="box" id="contact">
                         <h1>Thêm sản phẩm mới</h1>
 
                         <p class="lead">Bạn có muốn bán một cái gì đó không? Nhận giá tốt nhất cho nó thông qua hệ thống đấu giá của chúng tôi ! </p>
-                        
+
 
                         <hr>
 
                         <?php
-                        if(isset($_GET['err'])) {
+                        if (isset($_GET['err'])) {
                             echo '
                                     <div class="alert alert-info">
                                          <strong>Xin lỗi!</strong> Bạn cần phải <a href="register.php">đăng nhập</a> để thêm sản phẩm.
@@ -133,186 +133,186 @@ session_start();
                         }
                         ?>
                         <div class="panel-group" id="accordion">
-                        
 
-                        <form class="form-horizontal" action="success.php" method="POST">
 
-                            <div class="panel panel-primary">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
+                            <form class="form-horizontal" action="success.php" method="POST" enctype="multipart/form-data">
 
-					    <a data-toggle="collapse" data-parent="#accordion" href="#faq1">
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
 
-						1. Bạn muốn bán gì?
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#faq1">
 
-					    </a>
+                                                1. Bạn muốn bán gì?
 
-					</h4>
-                                </div>
-                                <div id="faq1" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                    <div class="form-group">
+                                            </a>
 
-                                    <label class="control-label col-sm-2" for="pwd">Loại :</label>
-                                        <div class="col-sm-10">
-                                       
-                                              <select class="form-control" name="CategoryID">
-                                               <?php
-                                                $value=1;
-                                                 while($categories) { 
-                
-                                                   ?>
-                                                <option value="<?php echo $value ?>"> <?php echo $categories["Category"];?></option>
-                                                <?php $categories = $result1->fetch_assoc();
-                                                    $value=$value+1;
-                                                }?>
-                                              </select>
-                                              <br>
-                                             </div>       
-                                            <br>       
-                                                    
-                                        <label class="control-label col-sm-2" >Tên sản phẩm :</label>
-                                          <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="ItemName" placeholder="Nhập tên sản phẩm">
-                                          </div>       
-                                          </div>   
+                                        </h4>
+                                    </div>
+                                    <div id="faq1" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <div class="form-group">
 
-                                                                          
+                                                <label class="control-label col-sm-2" for="pwd">Loại :</label>
+                                                <div class="col-sm-10">
+
+                                                    <select class="form-control" name="CategoryID">
+                                                        <?php
+                                                        $value = 1;
+                                                        while ($categories) {
+
+                                                        ?>
+                                                            <option value="<?php echo $value ?>"> <?php echo $categories["Category"]; ?></option>
+                                                        <?php $categories = $result1->fetch_assoc();
+                                                            $value = $value + 1;
+                                                        } ?>
+                                                    </select>
+                                                    <br>
+                                                </div>
+                                                <br>
+
+                                                <label class="control-label col-sm-2">Tên sản phẩm :</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" name="ItemName" placeholder="Nhập tên sản phẩm">
+                                                </div>
+                                            </div>
+
+
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                          
-                            <!-- /.panel -->
 
-                            <div class="panel panel-primary">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
+                                <!-- /.panel -->
 
-					    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
 
-						2. Giới thiệu thêm về sản phẩm của bạn.
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
 
-					    </a>
+                                                2. Giới thiệu thêm về sản phẩm của bạn.
 
-					</h4>
+                                            </a>
+
+                                        </h4>
+                                    </div>
+
+                                    <div id="collapseTwo" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <label class="control-label col-sm-2">Miêu tả :</label>
+                                            <div class="col-sm-10">
+                                                <textarea class="form-control" rows="5" name="Description"></textarea>
+                                                <br>
+                                            </div>
+
+                                            <label class="control-label col-sm-2">Ảnh :</label>
+                                            <div class="col-sm-10">
+                                                <input type="file" class="form-control" name="image">
+                                                <br>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
                                 </div>
-
-                                <div id="collapseTwo" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <label class="control-label col-sm-2" >Miêu tả :</label>
-                                         <div class="col-sm-10">
-                                        <textarea class="form-control" rows="5" name="Description"></textarea>
-                                        <br>
-                                        </div>
-                                    
-                                    <label class="control-label col-sm-2" >Ảnh :</label>
-                                         <div class="col-sm-10">
-                                       <input type="text" class="form-control" name="PhotosID" placeholder="Nhập đường dẫn ảnh Eg: img/image.jpg">
-                                       <br>
-                                        </div>
+                                <!-- /.panel -->
 
 
-                                        </div>
-                                </div>
-                            </div>
-                            <!-- /.panel -->
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
 
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
 
-                            <div class="panel panel-primary">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
+                                                3. Giá cả và khoảng thời gian
 
-					    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                            </a>
 
-						3. Giá cả và khoảng thời gian
+                                        </h4>
+                                    </div>
+                                    <div id="collapseThree" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <label class="control-label col-sm-2">Giá khởi điểm :</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" name="StartingPrice" placeholder="Nhập giá trị bắt đầu">
+                                                <br>
+                                            </div>
 
-					    </a>
+                                            <label class="control-label col-sm-2" for="comment">Giá dự kiến :</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" name="ExpectedPrice" placeholder="Nhập giá trị mong đợi">
+                                                <br>
+                                            </div>
 
-					</h4>
-                                </div>
-                                <div id="collapseThree" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <label class="control-label col-sm-2" >Giá khởi điểm :</label>
-                                         <div class="col-sm-10">
-                                       <input type="text" class="form-control" name="StartingPrice" placeholder="Nhập giá trị bắt đầu">
-                                       <br>
-                                        </div>
+                                            <label class="control-label col-sm-2" for="comment">Thời gian kết thúc :</label>
+                                            <div class="col-sm-10">
+                                                <div class="container">
 
-                                       <label class="control-label col-sm-2" for="comment">Giá dự kiến :</label>
-                                        <div class="col-sm-10">
-                                       <input type="text" class="form-control" name="ExpectedPrice" placeholder="Nhập giá trị mong đợi">
-                                       <br>
-                                        </div>
+                                                    <div class="container">
+                                                        <input required value="<?php echo date('Y-m-d'); ?>" class="date-picker" type="text" id="datepicker" name="EndTime">
 
-                                        <label class="control-label col-sm-2" for="comment">Thời gian kết thúc :</label>
-                                        <div class="col-sm-10">
-                                       <div class="container" >
-                                        
-                                        <div class="container">
-                                            <input required value="<?php echo date('Y-m-d'); ?>" class="date-picker" type="text" id="datepicker" name="EndTime">
+                                                    </div>
+                                                </div>
 
-                                        </div>
+                                            </div>
+
                                         </div>
 
                                     </div>
 
+                                    <!-- /.panel -->
+
                                 </div>
+                                <br>
 
-                            </div>
+                                <input type="submit" align="left" class="btn btn-primary center-block" type="submit" value="Thêm sản phẩm" name="add-product">
 
-                            <!-- /.panel -->
+                                <!-- /.panel-group -->
+                            </form>
 
                         </div>
-                        <br>
-                        
-                         <input type="submit" align ="left" class="btn btn-primary center-block" type="submit" value="Thêm sản phẩm">
-                       
-                        <!-- /.panel-group -->
-                    </form>
+
 
                     </div>
-
-
+                    <!-- /.col-md-9 -->
                 </div>
-                <!-- /.col-md-9 -->
+                <!-- /.container -->
             </div>
-            <!-- /.container -->
-        </div>
-        <!-- *** FOOTER ***
+            <!-- *** FOOTER ***
  _________________________________________________________ -->
-      
-    <?php include 'footer.php';?>
-    <!-- /#all -->
+
+            <?php include 'footer.php'; ?>
+            <!-- /#all -->
 
 
-    
 
-    <!-- *** SCRIPTS TO INCLUDE ***
+
+            <!-- *** SCRIPTS TO INCLUDE ***
  _________________________________________________________ -->
-    <script src="js/jquery-1.11.0.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.cookie.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/modernizr.js"></script>
-    <script src="js/bootstrap-hover-dropdown.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/front.js"></script>
-    <script src="js/bootstrap.js"></script>
+            <script src="js/jquery-1.11.0.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/jquery.cookie.js"></script>
+            <script src="js/waypoints.min.js"></script>
+            <script src="js/modernizr.js"></script>
+            <script src="js/bootstrap-hover-dropdown.js"></script>
+            <script src="js/owl.carousel.min.js"></script>
+            <script src="js/front.js"></script>
+            <script src="js/bootstrap.js"></script>
 
 
 
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+            <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+            <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
-    <script>
-        $(function() {
-            $( "#datepicker" ).datepicker({
-                dateFormat: "yy-mm-dd"
-            });
-        });
-    </script>
-    
-        
+            <script>
+                $(function() {
+                    $("#datepicker").datepicker({
+                        dateFormat: "yy-mm-dd"
+                    });
+                });
+            </script>
+
+
 </body>
 
 </html>

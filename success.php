@@ -114,21 +114,39 @@ if(!isset($_SESSION['userid'])){
                     <?php
 
                             $userID=$_SESSION['userid'];
-
+                            $image='';
                             if(isset($_POST['CategoryID'])){ $CategoryID=$_POST['CategoryID'];}else{$CategoryID=null;}
                             if(isset($_POST['ItemName'])){$ItemName=$_POST['ItemName'];}else{$ItemName=null;}
                             if(isset($_POST['Description'])){$Description=$_POST['Description'];}else{$Description=null;}
                             
-                            if(isset($_POST['PhotosID'])){$PhotosID=$_POST['PhotosID'];}else{$PhotosID=null;}
                             if(isset($_POST['StartingPrice'])){$StartingPrice=$_POST['StartingPrice'];}else{$StartingPrice=null;}
                             if(isset($_POST['ExpectedPrice'])){$ExpectedPrice=$_POST['ExpectedPrice'];}else{$ExpectedPrice=null;}
                             if(isset($_POST['EndTime'])){$EndTime=$_POST['EndTime'];}else{$EndTime=null;}
-                            
+
+                            if (isset($_FILES['image']) && $_FILES['image']['size'] != 0) {
+                                // declare variable used to save the image file to a temporary path
+                                $temp_name = $_FILES['image']['tmp_name'];
+                                // declare variable used to store the name of the image
+                                $img_name = $_FILES['image']['name'];
+                                // split image file name based on dot
+                                $parts = explode(".", $img_name);
+                                // get the image file extension (extension)
+                                $extension = end($parts);
+                                // set a new name for the image
+                                $ID = rand(1,100000);
+                                $image = "Item_" . $ID . "." . $extension;
+                                // set the address of the image file to move to
+                                $image_folder = "img/";
+                                $Photos = $image_folder . $image;
+                                // move the image file from the temporary path to the specified address
+                                move_uploaded_file($temp_name, $Photos);
+                                // The move_uploaded_file () function moves the uploaded file to the new location. 1. The file is moved. - 2. Where the file will be moved.
+                            }else{$Photos = NULL;}
 
                                         $db = mysqli_connect('localhost','root','','shop')
                                 or die('Error connecting to MySQL server.');
 
-                                $sql="INSERT INTO item (CategoryID,ItemName,Description, PhotosID, StartingPrice, ExpectedPrice,currentPrice,EndTime,SellerID)VALUES ('$CategoryID','$ItemName','$Description', '$PhotosID', '$StartingPrice', '$ExpectedPrice','$StartingPrice', '$EndTime', '$userID') " ;
+                                $sql="INSERT INTO item (CategoryID,ItemName,Description, PhotosID, StartingPrice, ExpectedPrice,currentPrice,EndTime,SellerID)VALUES ('$CategoryID','$ItemName','$Description', '$Photos', '$StartingPrice', '$ExpectedPrice','$StartingPrice', '$EndTime', '$userID') " ;
 
                                 if ($db->query($sql) === TRUE) {
                             //echo "New record created successfully";
@@ -162,7 +180,7 @@ if(!isset($_SESSION['userid'])){
                            
                             <div class="col-md-4">
                                 <p class="text-center">
-                                    <img src="<?php echo $PhotosID ?>" class="img-thumbnail  img-responsive" alt="">
+                                    <img src="<?php echo $Photos ?>" class="img-thumbnail  img-responsive" alt="">
                                 </p>
                                 <p class="text-center"><?php echo $ItemName ?></p>
                             </div>
