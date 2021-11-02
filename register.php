@@ -149,6 +149,13 @@ if(isset($_SESSION['userid'])){
                             </div>
                             ';
                         }
+                        if(isset($_GET['value'])){
+                            echo '
+                            <div class="alert alert-success">
+                                <strong>Thành công!</strong> Vui lòng đăng nhập.
+                            </div>
+                            ';
+                        }
                         ?>
                         <form action="process_login.php" method="post">
                             <div class="form-group">
