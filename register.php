@@ -59,7 +59,7 @@ if(isset($_SESSION['userid'])){
                 <div class="col-md-12">
 
                     <ul class="breadcrumb">
-                        <li><a href="#">Trang chủ</a>
+                        <li><a href="index.php">Trang chủ</a>
                         </li>
                         <li>Đăng ký / Đăng nhập</li>
                     </ul>
@@ -79,7 +79,7 @@ if(isset($_SESSION['userid'])){
                         if(isset($_GET['err']) && $_GET['err'] == 2) {
                             echo '
                             <div class="alert alert-danger">
-                                <strong>Error!</strong> Username you entered already exists.
+                                <strong>Error!</strong> Tài khoản hoặc Email đã có người sử dụng.
                             </div>
                             ';
                         }
@@ -87,7 +87,7 @@ if(isset($_SESSION['userid'])){
                         if(isset($_GET['success'])) {
                             echo '
                             <div class="alert alert-success">
-                                <strong>Success!</strong> Your account was successfully created. Please log in to continue.
+                                <strong>Success!</strong> Bạn đã đăng ký thành công, vui lòng vào email để xác thực tài khoản.
                             </div>
                             ';
                         }
@@ -145,7 +145,7 @@ if(isset($_SESSION['userid'])){
                         if(isset($_GET['err']) && $_GET['err'] == 1) {
                             echo '
                             <div class="alert alert-danger">
-                                <strong>Error!</strong> You have entered an invalid username or password.
+                                <strong>Error!</strong> Tài khoản hoặc mật khẩu không tồn tại.
                             </div>
                             ';
                         }
