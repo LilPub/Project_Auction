@@ -12,7 +12,7 @@
     <meta name="keywords" content="">
 
     <title>
-        Obaju : e-commerce template
+        Đấu giá TLU
     </title>
 
     <meta name="keywords" content="">
@@ -43,7 +43,7 @@
 <body>
     
    <?php $db = mysqli_connect('localhost','root','','shop')
-            or die('Error connecting to MySQL server.'); 
+            or die('Kết nối thất bại.'); 
 
             $query1 = "SELECT * FROM category ";
             $result1 = mysqli_query($db, $query1);
@@ -63,9 +63,9 @@
 
                 <div class="col-md-12">
                     <ul class="breadcrumb">
-                        <li><a href="#">Home</a>
+                        <li><a href="#">Trang chủ</a>
                         </li>
-                        <li>Contact</li>
+                        <li>Liên hệ</li>
                     </ul>
 
                 </div>
@@ -76,19 +76,19 @@
                     <div class="panel panel-default sidebar-menu">
 
                         <div class="panel-heading">
-                            <h3 class="panel-title">Quick Links</h3>
+                            <h3 class="panel-title">Liên kết</h3>
                         </div>
 
                         <div class="panel-body">
                             <ul class="nav nav-pills nav-stacked">
                                 <li>
-                                    <a href="index.php">Home</a>
+                                    <a href="index.php">Trang chủ</a>
                                 </li>
                                 <li>
-                                    <a href="contact.php">Contact Us</a>
+                                    <a href="contact.php">Liên hệ</a>
                                 </li>
                                 <li>
-                                    <a href="faq.php">FAQ</a>
+                                    <a href="faq.php">Câu hỏi thường gặp</a>
                                 </li>
 
                             </ul>
@@ -110,36 +110,35 @@
 
 
                     <div class="box" id="contact">
-                        <h1>Contact</h1>
+                        <h1>Liên hệ</h1>
 
-                        <p class="lead">Are you curious about something? Do you have some kind of problem with our products?</p>
-                        <p>Please feel free to contact us, our customer service center is working for you 24/7.</p>
+                        <p class="lead">Bạn có tò mò về điều gì đó không? Bạn có một số loại vấn đề với sản phẩm của chúng tôi?</p>
+                        <p>Xin vui lòng liên hệ với chúng tôi, trung tâm dịch vụ khách hàng của chúng tôi đang làm việc 24/7.</p>
 
                         <hr>
 
                         <div class="row">
                             <div class="col-sm-4">
-                                <h3><i class="fa fa-map-marker"></i> Address</h3>
-                                <p>13/25 New Avenue
-                                    <br>Peradeniya
-                                    <br>Kandy
-                                    <br>Sri Lanks
+                                <h3><i class="fa fa-map-marker"></i> Địa chỉ</h3>
+                                <p>175 Tây Sơn
+                                    <br>Đống Đa
+                                    <br>Hà Nội
                                     
                                 </p>
                             </div>
                             <!-- /.col-sm-4 -->
                             <div class="col-sm-4">
-                                <h3><i class="fa fa-phone"></i> Call center</h3>
-                                <p class="text-muted">This number is toll free if calling from Local otherwise we advise you to use the electronic form of communication.</p>
-                                <p><strong>+94775445957</strong>
+                                <h3><i class="fa fa-phone"></i> Trung tâm hỗ trợ</h3>
+                                <p class="text-muted">Số này miễn phí nếu gọi từ Địa phương, nếu không, chúng tôi khuyên bạn nên sử dụng hình thức liên lạc điện tử.</p>
+                                <p><strong>0912345678</strong>
                                 </p>
                             </div>
                             <!-- /.col-sm-4 -->
                             <div class="col-sm-4">
-                                <h3><i class="fa fa-envelope"></i> Electronic support</h3>
-                                <p class="text-muted">Please feel free to write an email to us or to use our electronic ticketing system.</p>
+                                <h3><i class="fa fa-envelope"></i> Hỗ trợ điện tử</h3>
+                                <p class="text-muted">Vui lòng viết email cho chúng tôi hoặc sử dụng hệ thống điện tử của chúng tôi.</p>
                                 <ul>
-                                    <li><strong><a href="mailto:">info@bidnow.com</a></strong>
+                                    <li><strong><a href="mailto:">TLU@gmail.com</a></strong>
                                     </li>
                                     
                                 </ul>
@@ -155,19 +154,19 @@
                         </div>
 
                         <hr>
-                        <h2>Contact form</h2>
+                        <h2>Mẫu liên hệ</h2>
 
                         <form>
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label for="firstname">Firstname</label>
+                                        <label for="firstname">Họ</label>
                                         <input type="text" class="form-control" id="firstname">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label for="lastname">Lastname</label>
+                                        <label for="lastname">Tên</label>
                                         <input type="text" class="form-control" id="lastname">
                                     </div>
                                 </div>
@@ -179,19 +178,19 @@
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label for="subject">Subject</label>
+                                        <label for="subject">Vấn đề</label>
                                         <input type="text" class="form-control" id="subject">
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
                                     <div class="form-group">
-                                        <label for="message">Message</label>
+                                        <label for="message">Thông điệp</label>
                                         <textarea id="message" class="form-control"></textarea>
                                     </div>
                                 </div>
 
                                 <div class="col-sm-12 text-center">
-                                    <button type="submit" class="btn btn-primary"><i class="fa fa-envelope-o"></i> Send message</button>
+                                    <button type="submit" class="btn btn-primary"><i class="fa fa-envelope-o"></i> Gửi thông điệp</button>
 
                                 </div>
                             </div>
@@ -238,14 +237,14 @@
         function initialize() {
             var mapOptions = {
                 zoom: 15,
-                center: new google.maps.LatLng(49.1678136, 16.5671893),
+                center: new google.maps.LatLng(21.040663, 105.825375),
                 mapTypeId: google.maps.MapTypeId.ROAD,
                 scrollwheel: false
             }
             var map = new google.maps.Map(document.getElementById('map'),
                 mapOptions);
 
-            var myLatLng = new google.maps.LatLng(49.1681989, 16.5650808);
+            var myLatLng = new google.maps.LatLng(21.040663, 105.825375);
             var marker = new google.maps.Marker({
                 position: myLatLng,
                 map: map
