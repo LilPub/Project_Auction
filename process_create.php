@@ -14,6 +14,7 @@ if (isset($_POST['create-btn'])) {
     $StartingPrice = $_POST['StartingPrice'];
     $ExpectedPrice = $_POST['ExpectedPrice'];
     $CurrentPrice = $_POST['CurrentPrice'];
+    $PhotosID = $_POST['PhotosID'];
     $Description = $_POST['Description'];
     $CategoryID = $_POST['CategoryID'];
     $EndTime = $_POST['EndTime'];
@@ -29,16 +30,17 @@ if (isset($_POST['create-btn'])) {
         // get the image file extension (extension)
         $extension = end($parts);
         // set a new name for the image
-        $image = $ItemName . "_" . $CategoryID . "." . $extension;
+        $ID = rand(1,100000);
+        $image = "Item_" . $ID . "." . $extension;
         // set the address of the image file to move to
         $image_folder = "img/";
-        $destination = $image_folder . $image;
+        $Photos = $image_folder . $image;
         // move the image file from the temporary path to the specified address
-        move_uploaded_file($temp_name, $destination);
+        move_uploaded_file($temp_name, $Photos);
         // The move_uploaded_file () function moves the uploaded file to the new location. 1. The file is moved. - 2. Where the file will be moved.
     }
     $sql2 = "INSERT INTO item ( ItemName, StartingPrice, ExpectedPrice, CurrentPrice, PhotosID, Description, CategoryID, EndTime) VALUES
-                    ('$ItemName', '$StartingPrice', '$ExpectedPrice', '$CurrentPrice', '$destination', '$Description', '$CategoryID', '$EndTime')";
+                    ('$ItemName', '$StartingPrice', '$ExpectedPrice', '$CurrentPrice', '$Photos', '$Description', '$CategoryID', '$EndTime')";
 
     if (mysqli_query($db, $sql2)) {
         echo "Thêm thành công";
