@@ -228,10 +228,10 @@
 									var year=<?php echo date('Y',strtotime($row['EndTime'])); ?>;    //-->Enter the count down target date YEAR
 									var month=<?php echo date('m',strtotime($row['EndTime'])); ?>;      //-->Enter the count down target date MONTH
 									var day=<?php echo date('d',strtotime($row['EndTime'])); ?>;       //-->Enter the count down target date DAY
-									var hour=<?php echo date('h',strtotime($row['EndTime'])); ?>;      //-->Enter the count down target date HOUR (24 hour clock)
+									var hour=<?php echo date('H',strtotime($row['EndTime'])); ?>;      //-->Enter the count down target date HOUR (24 hour clock)
 									var minute=<?php echo date('i',strtotime($row['EndTime'])); ?>;    //-->Enter the count down target date MINUTE
-									var tz=-5;        //-->Offset for your timezone 
-
+									var tz=7;        //-->Offset for your timezone 
+                                    
 									</script>
 
 
