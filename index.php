@@ -87,7 +87,7 @@
                 </div>
             </div>
 
-            <!-- home -->
+            
             <div id="advantages">
 
                 <div class="container">
