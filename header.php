@@ -22,7 +22,7 @@
                         }else{
                             echo '
                             <li><i style="color:white; margin-right:5px" class="fa fa-user" aria-hidden="true"></i>
-                                <a href="#">'.$_SESSION["username"].'</a></li>
+                                <a href="usershop.php">'.$_SESSION["username"].'</a></li>
                             <li><a href="logout.php">Đăng xuất</a></li>
                             ';
                         }
