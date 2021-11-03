@@ -249,7 +249,7 @@ session_start();
                                                 <div class="container">
 
                                                     <div class="container">
-                                                        <input required value="<?php echo date('Y-m-d'); ?>" class="date-picker" type="text" id="datepicker" name="EndTime">
+                                                        <input required value="<?php echo date('Y-m-d'); ?>" class="date-picker" type="datetime-local" id="datepicker" name="EndTime">
 
                                                     </div>
                                                 </div>
