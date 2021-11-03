@@ -464,7 +464,8 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`UserID`, `Username`, `Password`, `Contact_No`, `Address`, `FName`, `LName`, `status`, `active`, `email`) VALUES
 (6, 'long', '$2y$10$cuY.udIqpavOoI0E7Gc9zOkTwq8bHRWj8IsGLZDkmacbgxLWRD06i', 843906364, '123', 'Nguyễn', 'Long', 1, 'c19f679268a96abf88145774923c7559', 'nghlong011@gmail.com'),
-(9, 'admin', '$2y$10$xjRTNfp6ssx2qZvIXxqHZ.SZfOiILXaUfBVWr4Tcg5SRBqaf28e0y', 843906364, '123', 'Nguyễn', 'Long', 1, '449acb870ffacf72f526fc2d9449b3b0', 'hoanglonglong197@gmail.com');
+(9, 'admin', '$2y$10$xjRTNfp6ssx2qZvIXxqHZ.SZfOiILXaUfBVWr4Tcg5SRBqaf28e0y', 843906364, '123', 'Nguyễn', 'Long', 2, '449acb870ffacf72f526fc2d9449b3b0', 'hoanglonglong197@gmail.com'),
+(10, 'hiep123', '$2y$10$.YKAKmtGJbQowFoaJvYfuudcxNT2R8DmrPvHeDxcsc046ObJCi2EK', 999888888, 'Hung Yen', 'Tran', 'Hiep', 1, '3728a72519d1ca0ae06fe5385f767086', 'hiep140701@gmail.com');
 
 --
 -- Chỉ mục cho các bảng đã đổ
