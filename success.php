@@ -66,7 +66,7 @@ if(!isset($_SESSION['userid'])){
 
                 <div class="col-md-12">
                     <ul class="breadcrumb">
-                        <li><a href="#">Home</a>
+                        <li><a href="index.php">Trang chủ</a>
                         </li>
                         <li>Text page</li>
                     </ul>
@@ -84,13 +84,13 @@ if(!isset($_SESSION['userid'])){
                         <div class="panel-body">
                             <ul class="nav nav-pills nav-stacked">
                                 <li>
-                                    <a href="index.php">Home</a>
+                                    <a href="index.php">Trang chủ</a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">Contact Us</a>
+                                    <a href="contact.php">Hỗ trợ</a>
                                 </li>
                                 <li>
-                                    <a href="faq.html">FAQ</a>
+                                    <a href="faq.php">FAQ</a>
                                 </li>
 
                             </ul>
@@ -158,7 +158,7 @@ if(!isset($_SESSION['userid'])){
 
                         ?>
 
-                        <h1>Your Lising was submitted successfully!</h1>
+                        <h1>Sản phẩm của bạn được thêm thành công!</h1>
 
                         
 
@@ -174,7 +174,7 @@ if(!isset($_SESSION['userid'])){
 
                         <hr>
 
-                        <h2>Images</h2>
+                        <h2>Hình ảnh</h2>
 
                         <div class="row">
                            
