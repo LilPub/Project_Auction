@@ -98,7 +98,7 @@ if(!isset($_SESSION['userid'])){
                         </div>
                     </div>
 
-                    <!-- *** PAGES MENU END *** -->
+                    
 
 
                     <div class="banner">
