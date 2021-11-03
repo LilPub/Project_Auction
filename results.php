@@ -109,7 +109,7 @@
                                 </a>
                                 <div class="text">
                                     <h3><?php echo $searchResults['ItemName'] ?></h3>
-                                    <p class="price">Rs : <?php echo number_format($searchResults['CurrentPrice'],2);?></p>
+                                    <p class="price">Giá : <?php echo number_format($searchResults['CurrentPrice']);?></p>
                                 </div>
                             </div>
                             <!-- /.product -->
