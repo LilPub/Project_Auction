@@ -13,11 +13,19 @@
                     <?php
 
                     if(isset($_SESSION['username'])) {
-                        echo '
-                        <li><i style="color:white; margin-right:5px" class="fa fa-user" aria-hidden="true"></i>
-                        	<a href="userItems.php?CategoryID=admin">'.$_SESSION["username"].'</a></li>
-                        <li><a href="logout.php">Đăng xuất</a></li>
-                        ';
+                        if(isset($_SESSION['status'])&&($_SESSION['status']==2)){
+                            echo '
+                            <li><i style="color:white; margin-right:5px" class="fa fa-user" aria-hidden="true"></i>
+                                <a href="userItems.php?CategoryID=admin">'.$_SESSION["username"].'</a></li>
+                            <li><a href="logout.php">Đăng xuất</a></li>
+                            ';
+                        }else{
+                            echo '
+                            <li><i style="color:white; margin-right:5px" class="fa fa-user" aria-hidden="true"></i>
+                                <a href="#">'.$_SESSION["username"].'</a></li>
+                            <li><a href="logout.php">Đăng xuất</a></li>
+                            ';
+                        }
                     } else {
                         echo '
                         <li><a href="register.php">Đăng nhập</a></li>
