@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 02, 2021 lúc 11:28 AM
+-- Thời gian đã tạo: Th10 03, 2021 lúc 06:01 PM
 -- Phiên bản máy phục vụ: 10.4.21-MariaDB
 -- Phiên bản PHP: 8.0.10
 
@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `bids` (
   `ItemID` int(5) NOT NULL,
-  `BidderID` int(4) NOT NULL,
+  `BidderID` int(10) NOT NULL,
   `BidAmount` int(6) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -43,7 +43,9 @@ INSERT INTO `bids` (`ItemID`, `BidderID`, `BidAmount`) VALUES
 (59, 1, 32000000),
 (68, 1, 3780000),
 (59, 1, 33000000),
-(70, 1, 2400000);
+(70, 1, 2400000),
+(70, 9, 2700000),
+(51, 9, 860000);
 
 -- --------------------------------------------------------
 
@@ -68,19 +70,6 @@ INSERT INTO `category` (`CategoryID`, `Category`) VALUES
 (5, 'Quần áo'),
 (6, 'Giày'),
 (7, 'Phòng bếp');
-
--- --------------------------------------------------------
-
---
--- Cấu trúc bảng cho bảng `feedbackprofile`
---
-
-CREATE TABLE `feedbackprofile` (
-  `FeedbackID` int(6) NOT NULL,
-  `InvoiceNumber` int(6) NOT NULL,
-  `Positive` tinyint(1) NOT NULL,
-  `Description` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -128,7 +117,7 @@ INSERT INTO `item` (`ItemID`, `ItemName`, `SellerID`, `StartingPrice`, `Expected
 (48, 'Bạc Phụ nữ Pha lê Rhinestone khối', NULL, 500000, 750000, 500000, 'img/fs2.jpg', ' Nếu bạn nhận được sản phẩm bị lỗi hoặc chúng tôi gửi cho bạn sản phẩm sai, hoặc mặt hàng không như mô tả,\r\n  hoặc mặt hàng bị hư hỏng vì vận chuyển quốc tế, đừng lo lắng, xin vui lòng liên hệ với chúng tôi, chúng tôi chấp nhận hoàn lại tiền,\r\n  hoặc đổi hàng. Bất kỳ mặt hàng không nhận được gây ra bởi địa chỉ không hợp lệ đã đăng ký trên PayPal đều không có trong của chúng tôi\r\n  hoàn trả đầy đủ hoặc chính sách thay thế.', 4, '2021-09-23 00:00:00'),
 (49, 'Cỏ bốn lá màu xanh lá cây thực sự', NULL, 600000, 1000000, 670000, 'img/fs3.jpg', ' Nếu bạn nhận được sản phẩm bị lỗi hoặc chúng tôi gửi cho bạn sản phẩm sai, hoặc mặt hàng không như mô tả,\r\n  hoặc mặt hàng bị hư hỏng vì vận chuyển quốc tế, đừng lo lắng, xin vui lòng liên hệ với chúng tôi, chúng tôi chấp nhận hoàn lại tiền,\r\n  hoặc đổi hàng. Bất kỳ mặt hàng không nhận được gây ra bởi địa chỉ không hợp lệ đã đăng ký trên PayPal đều không có trong của chúng tôi\r\n  hoàn trả đầy đủ hoặc chính sách thay thế.', 4, '2021-09-28 00:00:00'),
 (50, 'Vòng cổ choker mặt dây chuyền giọt nước', NULL, 600000, 1000000, 600000, 'img/fs4.jpg', ' Nếu bạn nhận được sản phẩm bị lỗi hoặc chúng tôi gửi cho bạn sản phẩm sai, hoặc mặt hàng không như mô tả,\r\n  hoặc mặt hàng bị hư hỏng vì vận chuyển quốc tế, đừng lo lắng, xin vui lòng liên hệ với chúng tôi, chúng tôi chấp nhận hoàn lại tiền,\r\n  hoặc đổi hàng. Bất kỳ mặt hàng không nhận được gây ra bởi địa chỉ không hợp lệ đã đăng ký trên PayPal đều không có trong của chúng tôi\r\n  hoàn trả đầy đủ hoặc chính sách thay thế.\r\n', 4, '2021-09-04 00:00:00'),
-(51, 'Vòng cổ choker mặt dây chuyền giọt nước', NULL, 600000, 900000, 600000, 'img/fs5.jpg', ' Nếu bạn nhận được sản phẩm bị lỗi hoặc chúng tôi gửi cho bạn sản phẩm sai, hoặc mặt hàng không như mô tả,\r\n  hoặc mặt hàng bị hư hỏng vì vận chuyển quốc tế, đừng lo lắng, xin vui lòng liên hệ với chúng tôi, chúng tôi chấp nhận hoàn lại tiền,\r\n  hoặc đổi hàng. Bất kỳ mặt hàng không nhận được gây ra bởi địa chỉ không hợp lệ đã đăng ký trên PayPal đều không có trong của chúng tôi\r\n  hoàn trả đầy đủ hoặc chính sách thay thế.', 4, '2021-09-30 00:00:00'),
+(51, 'Vòng cổ choker mặt dây chuyền giọt nước', NULL, 600000, 900000, 860000, 'img/fs5.jpg', ' Nếu bạn nhận được sản phẩm bị lỗi hoặc chúng tôi gửi cho bạn sản phẩm sai, hoặc mặt hàng không như mô tả,\r\n  hoặc mặt hàng bị hư hỏng vì vận chuyển quốc tế, đừng lo lắng, xin vui lòng liên hệ với chúng tôi, chúng tôi chấp nhận hoàn lại tiền,\r\n  hoặc đổi hàng. Bất kỳ mặt hàng không nhận được gây ra bởi địa chỉ không hợp lệ đã đăng ký trên PayPal đều không có trong của chúng tôi\r\n  hoàn trả đầy đủ hoặc chính sách thay thế.', 4, '2021-09-30 00:00:00'),
 (52, 'Mặt dây chuyền quyến rũ DOLLAR POUCH', NULL, 600000, 900000, 600000, 'img/fs6.jpg', ' Nếu bạn nhận được sản phẩm bị lỗi hoặc chúng tôi gửi cho bạn sản phẩm sai, hoặc mặt hàng không như mô tả,\r\n  hoặc mặt hàng bị hư hỏng vì vận chuyển quốc tế, đừng lo lắng, xin vui lòng liên hệ với chúng tôi, chúng tôi chấp nhận hoàn lại tiền,\r\n  hoặc đổi hàng. Bất kỳ mặt hàng không nhận được gây ra bởi địa chỉ không hợp lệ đã đăng ký trên PayPal đều không có trong của chúng tôi\r\n  hoàn trả đầy đủ hoặc chính sách thay thế.', 4, '2021-09-26 00:00:00'),
 (53, 'Bộ lọc vòi Bộ lọc nước Vòi', NULL, 250000, 520000, 250000, 'img/kt1.jpg', 'Đặc trưng:\r\n100% thương hiệu mới, chất lượng cao\r\n\r\nMàu sắc: Ngẫu nhiên\r\n\r\nThông số kỹ thuật:\r\nChất liệu: Sponge\r\n\r\nGói bao gồm:\r\n1 bộ lọc bọt biển X', 7, '2021-09-01 00:00:00'),
 (54, 'Máy cắt khoai tây chiên mới lạ Cắt thành từng dải', NULL, 360000, 520000, 412000, 'img/kt2.jpg', 'Đặc trưng:\r\n100% thương hiệu mới, chất lượng cao\r\n\r\nMàu sắc: Ngẫu nhiên\r\n\r\nThông số kỹ thuật:\r\nChất liệu: Sponge\r\n\r\nGói bao gồm:\r\n1 bộ lọc bọt biển X', 7, '2021-09-30 00:00:00'),
@@ -147,283 +136,8 @@ INSERT INTO `item` (`ItemID`, `ItemName`, `SellerID`, `StartingPrice`, `Expected
 (67, 'Giày chạy bộ phiên bản cổ điển', NULL, 2900000, 3600000, 2900000, 'img/sh3.jpg', 'Giày chạy bộ cao cấp Nike nam Flyknit Max Air mới\r\n\r\n(Mới với Hộp)\r\n\r\nPhong cách # 620469-404\r\n\r\nMàu: Xanh\r\n\r\nKích thước: 11,5 US, 13 US\r\n\r\nGiữ lại ở mức 3600000\r\n\r\n \r\nMUA CHÚNG VỚI GIÁ 2900000\r\n\r\nPHÍ VẬN CHUYỂN / XỬ LÝ ĐƯỢC MIỄN PHÍ QUA CÁC CÔNG DỤNG TẠI Việt Nam. BỔ SUNG PHÍ VẬN CHUYỂN QUỐC TẾ.\r\n\r\nTÔI SẼ VẬN CHUYỂN NGAY SAU KHI THANH TOÁN ĐƯỢC THỰC HIỆN. TÔI CHẤP NHẬN PAYPAL,', 6, '2021-09-23 00:00:00'),
 (68, 'Boot gia cao cấp giới hạn', NULL, 3700000, 5100000, 3780000, 'img/sh4.jpg', 'Giày chạy bộ cao cấp Nike nam Flyknit Max Air mới\r\n\r\n(Mới với Hộp)\r\n\r\nPhong cách # 620469-404\r\n\r\nMàu: Đen xám\r\n\r\nKích thước: 11,5 US, 13 US\r\n\r\nGiữ lại ở mức 5100000\r\n\r\n \r\nMUA CHÚNG VỚI GIÁ 3780000\r\n\r\nPHÍ VẬN CHUYỂN / XỬ LÝ ĐƯỢC MIỄN PHÍ QUA CÁC CÔNG DỤNG TẠI Việt Nam. BỔ SUNG PHÍ VẬN CHUYỂN QUỐC TẾ.\r\n\r\nTÔI SẼ VẬN CHUYỂN NGAY SAU KHI THANH TOÁN ĐƯỢC THỰC HIỆN. TÔI CHẤP NHẬN PAYPAL,', 6, '2021-09-16 00:00:00'),
 (69, 'Giày cao gót show diễn BP', NULL, 2100000, 2600000, 2100000, 'img/sh5.jpg', 'Giày chạy bộ cao cấp Nike nam Flyknit Max Air mới\r\n\r\n(Mới với Hộp)\r\n\r\nPhong cách # 620469-404\r\n\r\nMàu: Màu pha\r\n\r\nKích thước: 11,5 US, 13 US\r\n\r\nGiữ lại ở mức 2600000\r\n\r\n \r\nMUA CHÚNG VỚI GIÁ 2100000\r\n\r\nPHÍ VẬN CHUYỂN / XỬ LÝ ĐƯỢC MIỄN PHÍ QUA CÁC CÔNG DỤNG TẠI Việt Nam. BỔ SUNG PHÍ VẬN CHUYỂN QUỐC TẾ.\r\n\r\nTÔI SẼ VẬN CHUYỂN NGAY SAU KHI THANH TOÁN ĐƯỢC THỰC HIỆN. TÔI CHẤP NHẬN PAYPAL,', 6, '2021-09-05 00:00:00'),
-(70, 'Sandal phiên bản sự kiện ', NULL, 1900000, 3000000, 2400000, 'img/sh6.jpg', 'Giày chạy bộ cao cấp Nike nam Flyknit Max Air mới\r\n\r\n(Mới với Hộp)\r\n\r\nPhong cách # 620469-404\r\n\r\nMàu: Vàng / Đen\r\n\r\nKích thước: 11,5 US, 13 US\r\n\r\nGiữ lại ở mức 3000000\r\n\r\n \r\nMUA CHÚNG VỚI GIÁ 1900000\r\n\r\nPHÍ VẬN CHUYỂN / XỬ LÝ ĐƯỢC MIỄN PHÍ QUA CÁC CÔNG DỤNG TẠI Việt Nam. BỔ SUNG PHÍ VẬN CHUYỂN QUỐC TẾ.\r\n\r\nTÔI SẼ VẬN CHUYỂN NGAY SAU KHI THANH TOÁN ĐƯỢC THỰC HIỆN. TÔI CHẤP NHẬN PAYPAL,', 6, '2021-11-02 00:00:00'),
+(70, 'Sandal phiên bản sự kiện ', NULL, 1900000, 3000000, 2700000, 'img/sh6.jpg', 'Giày chạy bộ cao cấp Nike nam Flyknit Max Air mới\r\n\r\n(Mới với Hộp)\r\n\r\nPhong cách # 620469-404\r\n\r\nMàu: Vàng / Đen\r\n\r\nKích thước: 11,5 US, 13 US\r\n\r\nGiữ lại ở mức 3000000\r\n\r\n \r\nMUA CHÚNG VỚI GIÁ 1900000\r\n\r\nPHÍ VẬN CHUYỂN / XỬ LÝ ĐƯỢC MIỄN PHÍ QUA CÁC CÔNG DỤNG TẠI Việt Nam. BỔ SUNG PHÍ VẬN CHUYỂN QUỐC TẾ.\r\n\r\nTÔI SẼ VẬN CHUYỂN NGAY SAU KHI THANH TOÁN ĐƯỢC THỰC HIỆN. TÔI CHẤP NHẬN PAYPAL,', 6, '2021-11-02 00:00:00'),
 (73, 'iphone', 1, 11111, 1111111, 11111, 'img/iphone1.jpg', '', 1, '2021-11-03 00:00:00');
-
--- --------------------------------------------------------
-
---
--- Cấu trúc bảng cho bảng `message`
---
-
-CREATE TABLE `message` (
-  `MessageID` int(6) NOT NULL,
-  `SenderID` int(6) NOT NULL,
-  `ReceiverID` int(6) NOT NULL,
-  `Topic` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `Body` varchar(1500) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Cấu trúc bảng cho bảng `pma__bookmark`
---
-
-CREATE TABLE `pma__bookmark` (
-  `id` int(10) UNSIGNED NOT NULL,
-  `dbase` varchar(255) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `user` varchar(255) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `label` varchar(255) CHARACTER SET utf8 NOT NULL DEFAULT '',
-  `query` text COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Bookmarks';
-
--- --------------------------------------------------------
-
---
--- Cấu trúc bảng cho bảng `pma__central_columns`
---
-
-CREATE TABLE `pma__central_columns` (
-  `db_name` varchar(64) COLLATE utf8_bin NOT NULL,
-  `col_name` varchar(64) COLLATE utf8_bin NOT NULL,
-  `col_type` varchar(64) COLLATE utf8_bin NOT NULL,
-  `col_length` text COLLATE utf8_bin DEFAULT NULL,
-  `col_collation` varchar(64) COLLATE utf8_bin NOT NULL,
-  `col_isNull` tinyint(1) NOT NULL,
-  `col_extra` varchar(255) COLLATE utf8_bin DEFAULT '',
-  `col_default` text COLLATE utf8_bin DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Central list of columns';
-
--- --------------------------------------------------------
-
---
--- Cấu trúc bảng cho bảng `pma__column_info`
---
-
-CREATE TABLE `pma__column_info` (
-  `id` int(5) UNSIGNED NOT NULL,
-  `db_name` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `table_name` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `column_name` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `comment` varchar(255) CHARACTER SET utf8 NOT NULL DEFAULT '',
-  `mimetype` varchar(255) CHARACTER SET utf8 NOT NULL DEFAULT '',
-  `transformation` varchar(255) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `transformation_options` varchar(255) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `input_transformation` varchar(255) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `input_transformation_options` varchar(255) COLLATE utf8_bin NOT NULL DEFAULT ''
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Column information for phpMyAdmin';
-
--- --------------------------------------------------------
-
---
--- Cấu trúc bảng cho bảng `pma__designer_settings`
---
-
-CREATE TABLE `pma__designer_settings` (
-  `username` varchar(64) COLLATE utf8_bin NOT NULL,
-  `settings_data` text COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Settings related to Designer';
-
--- --------------------------------------------------------
-
---
--- Cấu trúc bảng cho bảng `pma__export_templates`
---
-
-CREATE TABLE `pma__export_templates` (
-  `id` int(5) UNSIGNED NOT NULL,
-  `username` varchar(64) COLLATE utf8_bin NOT NULL,
-  `export_type` varchar(10) COLLATE utf8_bin NOT NULL,
-  `template_name` varchar(64) COLLATE utf8_bin NOT NULL,
-  `template_data` text COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Saved export templates';
-
--- --------------------------------------------------------
-
---
--- Cấu trúc bảng cho bảng `pma__favorite`
---
-
-CREATE TABLE `pma__favorite` (
-  `username` varchar(64) COLLATE utf8_bin NOT NULL,
-  `tables` text COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Favorite tables';
-
--- --------------------------------------------------------
-
---
--- Cấu trúc bảng cho bảng `pma__history`
---
-
-CREATE TABLE `pma__history` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `username` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `db` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `table` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `timevalue` timestamp NOT NULL DEFAULT current_timestamp(),
-  `sqlquery` text COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='SQL history for phpMyAdmin';
-
--- --------------------------------------------------------
-
---
--- Cấu trúc bảng cho bảng `pma__navigationhiding`
---
-
-CREATE TABLE `pma__navigationhiding` (
-  `username` varchar(64) COLLATE utf8_bin NOT NULL,
-  `item_name` varchar(64) COLLATE utf8_bin NOT NULL,
-  `item_type` varchar(64) COLLATE utf8_bin NOT NULL,
-  `db_name` varchar(64) COLLATE utf8_bin NOT NULL,
-  `table_name` varchar(64) COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Hidden items of navigation tree';
-
--- --------------------------------------------------------
-
---
--- Cấu trúc bảng cho bảng `pma__pdf_pages`
---
-
-CREATE TABLE `pma__pdf_pages` (
-  `db_name` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `page_nr` int(10) UNSIGNED NOT NULL,
-  `page_descr` varchar(50) CHARACTER SET utf8 NOT NULL DEFAULT ''
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='PDF relation pages for phpMyAdmin';
-
--- --------------------------------------------------------
-
---
--- Cấu trúc bảng cho bảng `pma__recent`
---
-
-CREATE TABLE `pma__recent` (
-  `username` varchar(64) COLLATE utf8_bin NOT NULL,
-  `tables` text COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Recently accessed tables';
-
--- --------------------------------------------------------
-
---
--- Cấu trúc bảng cho bảng `pma__relation`
---
-
-CREATE TABLE `pma__relation` (
-  `master_db` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `master_table` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `master_field` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `foreign_db` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `foreign_table` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `foreign_field` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT ''
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Relation table';
-
--- --------------------------------------------------------
-
---
--- Cấu trúc bảng cho bảng `pma__savedsearches`
---
-
-CREATE TABLE `pma__savedsearches` (
-  `id` int(5) UNSIGNED NOT NULL,
-  `username` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `db_name` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `search_name` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `search_data` text COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Saved searches';
-
--- --------------------------------------------------------
-
---
--- Cấu trúc bảng cho bảng `pma__table_coords`
---
-
-CREATE TABLE `pma__table_coords` (
-  `db_name` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `table_name` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `pdf_page_number` int(11) NOT NULL DEFAULT 0,
-  `x` float UNSIGNED NOT NULL DEFAULT 0,
-  `y` float UNSIGNED NOT NULL DEFAULT 0
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Table coordinates for phpMyAdmin PDF output';
-
--- --------------------------------------------------------
-
---
--- Cấu trúc bảng cho bảng `pma__table_info`
---
-
-CREATE TABLE `pma__table_info` (
-  `db_name` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `table_name` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `display_field` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT ''
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Table information for phpMyAdmin';
-
--- --------------------------------------------------------
-
---
--- Cấu trúc bảng cho bảng `pma__table_uiprefs`
---
-
-CREATE TABLE `pma__table_uiprefs` (
-  `username` varchar(64) COLLATE utf8_bin NOT NULL,
-  `db_name` varchar(64) COLLATE utf8_bin NOT NULL,
-  `table_name` varchar(64) COLLATE utf8_bin NOT NULL,
-  `prefs` text COLLATE utf8_bin NOT NULL,
-  `last_update` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Tables'' UI preferences';
-
--- --------------------------------------------------------
-
---
--- Cấu trúc bảng cho bảng `pma__tracking`
---
-
-CREATE TABLE `pma__tracking` (
-  `db_name` varchar(64) COLLATE utf8_bin NOT NULL,
-  `table_name` varchar(64) COLLATE utf8_bin NOT NULL,
-  `version` int(10) UNSIGNED NOT NULL,
-  `date_created` datetime NOT NULL,
-  `date_updated` datetime NOT NULL,
-  `schema_snapshot` text COLLATE utf8_bin NOT NULL,
-  `schema_sql` text COLLATE utf8_bin DEFAULT NULL,
-  `data_sql` longtext COLLATE utf8_bin DEFAULT NULL,
-  `tracking` set('UPDATE','REPLACE','INSERT','DELETE','TRUNCATE','CREATE DATABASE','ALTER DATABASE','DROP DATABASE','CREATE TABLE','ALTER TABLE','RENAME TABLE','DROP TABLE','CREATE INDEX','DROP INDEX','CREATE VIEW','ALTER VIEW','DROP VIEW') COLLATE utf8_bin DEFAULT NULL,
-  `tracking_active` int(1) UNSIGNED NOT NULL DEFAULT 1
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Database changes tracking for phpMyAdmin';
-
--- --------------------------------------------------------
-
---
--- Cấu trúc bảng cho bảng `pma__userconfig`
---
-
-CREATE TABLE `pma__userconfig` (
-  `username` varchar(64) COLLATE utf8_bin NOT NULL,
-  `timevalue` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
-  `config_data` text COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='User preferences storage for phpMyAdmin';
-
--- --------------------------------------------------------
-
---
--- Cấu trúc bảng cho bảng `pma__usergroups`
---
-
-CREATE TABLE `pma__usergroups` (
-  `usergroup` varchar(64) COLLATE utf8_bin NOT NULL,
-  `tab` varchar(64) COLLATE utf8_bin NOT NULL,
-  `allowed` enum('Y','N') COLLATE utf8_bin NOT NULL DEFAULT 'N'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='User groups with configured menu items';
-
--- --------------------------------------------------------
-
---
--- Cấu trúc bảng cho bảng `pma__users`
---
-
-CREATE TABLE `pma__users` (
-  `username` varchar(64) COLLATE utf8_bin NOT NULL,
-  `usergroup` varchar(64) COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Users and their assignments to user groups';
 
 -- --------------------------------------------------------
 
@@ -463,13 +177,20 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`UserID`, `Username`, `Password`, `Contact_No`, `Address`, `FName`, `LName`, `status`, `active`, `email`) VALUES
-(6, 'long', '$2y$10$cuY.udIqpavOoI0E7Gc9zOkTwq8bHRWj8IsGLZDkmacbgxLWRD06i', 843906364, '123', 'Nguyễn', 'Long', 1, 'c19f679268a96abf88145774923c7559', 'nghlong011@gmail.com'),
+(1, 'long', '$2y$10$cuY.udIqpavOoI0E7Gc9zOkTwq8bHRWj8IsGLZDkmacbgxLWRD06i', 843906364, '123', 'Nguyễn', 'Long', 1, 'c19f679268a96abf88145774923c7559', 'nghlong011@gmail.com'),
 (9, 'admin', '$2y$10$xjRTNfp6ssx2qZvIXxqHZ.SZfOiILXaUfBVWr4Tcg5SRBqaf28e0y', 843906364, '123', 'Nguyễn', 'Long', 2, '449acb870ffacf72f526fc2d9449b3b0', 'hoanglonglong197@gmail.com'),
 (10, 'hiep123', '$2y$10$.YKAKmtGJbQowFoaJvYfuudcxNT2R8DmrPvHeDxcsc046ObJCi2EK', 999888888, 'Hung Yen', 'Tran', 'Hiep', 1, '3728a72519d1ca0ae06fe5385f767086', 'hiep140701@gmail.com');
 
 --
 -- Chỉ mục cho các bảng đã đổ
 --
+
+--
+-- Chỉ mục cho bảng `bids`
+--
+ALTER TABLE `bids`
+  ADD KEY `ItemID` (`ItemID`),
+  ADD KEY `BidderID` (`BidderID`);
 
 --
 -- Chỉ mục cho bảng `category`
@@ -484,124 +205,10 @@ ALTER TABLE `item`
   ADD PRIMARY KEY (`ItemID`);
 
 --
--- Chỉ mục cho bảng `pma__bookmark`
+-- Chỉ mục cho bảng `solditems`
 --
-ALTER TABLE `pma__bookmark`
-  ADD PRIMARY KEY (`id`);
-
---
--- Chỉ mục cho bảng `pma__central_columns`
---
-ALTER TABLE `pma__central_columns`
-  ADD PRIMARY KEY (`db_name`,`col_name`);
-
---
--- Chỉ mục cho bảng `pma__column_info`
---
-ALTER TABLE `pma__column_info`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `db_name` (`db_name`,`table_name`,`column_name`);
-
---
--- Chỉ mục cho bảng `pma__designer_settings`
---
-ALTER TABLE `pma__designer_settings`
-  ADD PRIMARY KEY (`username`);
-
---
--- Chỉ mục cho bảng `pma__export_templates`
---
-ALTER TABLE `pma__export_templates`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `u_user_type_template` (`username`,`export_type`,`template_name`);
-
---
--- Chỉ mục cho bảng `pma__favorite`
---
-ALTER TABLE `pma__favorite`
-  ADD PRIMARY KEY (`username`);
-
---
--- Chỉ mục cho bảng `pma__history`
---
-ALTER TABLE `pma__history`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `username` (`username`,`db`,`table`,`timevalue`);
-
---
--- Chỉ mục cho bảng `pma__navigationhiding`
---
-ALTER TABLE `pma__navigationhiding`
-  ADD PRIMARY KEY (`username`,`item_name`,`item_type`,`db_name`,`table_name`);
-
---
--- Chỉ mục cho bảng `pma__pdf_pages`
---
-ALTER TABLE `pma__pdf_pages`
-  ADD PRIMARY KEY (`page_nr`),
-  ADD KEY `db_name` (`db_name`);
-
---
--- Chỉ mục cho bảng `pma__recent`
---
-ALTER TABLE `pma__recent`
-  ADD PRIMARY KEY (`username`);
-
---
--- Chỉ mục cho bảng `pma__relation`
---
-ALTER TABLE `pma__relation`
-  ADD PRIMARY KEY (`master_db`,`master_table`,`master_field`),
-  ADD KEY `foreign_field` (`foreign_db`,`foreign_table`);
-
---
--- Chỉ mục cho bảng `pma__savedsearches`
---
-ALTER TABLE `pma__savedsearches`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `u_savedsearches_username_dbname` (`username`,`db_name`,`search_name`);
-
---
--- Chỉ mục cho bảng `pma__table_coords`
---
-ALTER TABLE `pma__table_coords`
-  ADD PRIMARY KEY (`db_name`,`table_name`,`pdf_page_number`);
-
---
--- Chỉ mục cho bảng `pma__table_info`
---
-ALTER TABLE `pma__table_info`
-  ADD PRIMARY KEY (`db_name`,`table_name`);
-
---
--- Chỉ mục cho bảng `pma__table_uiprefs`
---
-ALTER TABLE `pma__table_uiprefs`
-  ADD PRIMARY KEY (`username`,`db_name`,`table_name`);
-
---
--- Chỉ mục cho bảng `pma__tracking`
---
-ALTER TABLE `pma__tracking`
-  ADD PRIMARY KEY (`db_name`,`table_name`,`version`);
-
---
--- Chỉ mục cho bảng `pma__userconfig`
---
-ALTER TABLE `pma__userconfig`
-  ADD PRIMARY KEY (`username`);
-
---
--- Chỉ mục cho bảng `pma__usergroups`
---
-ALTER TABLE `pma__usergroups`
-  ADD PRIMARY KEY (`usergroup`,`tab`,`allowed`);
-
---
--- Chỉ mục cho bảng `pma__users`
---
-ALTER TABLE `pma__users`
-  ADD PRIMARY KEY (`username`,`usergroup`);
+ALTER TABLE `solditems`
+  ADD KEY `ItemID` (`ItemID`);
 
 --
 -- Chỉ mục cho bảng `user`
@@ -621,46 +228,27 @@ ALTER TABLE `item`
   MODIFY `ItemID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=74;
 
 --
--- AUTO_INCREMENT cho bảng `pma__bookmark`
---
-ALTER TABLE `pma__bookmark`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT cho bảng `pma__column_info`
---
-ALTER TABLE `pma__column_info`
-  MODIFY `id` int(5) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT cho bảng `pma__export_templates`
---
-ALTER TABLE `pma__export_templates`
-  MODIFY `id` int(5) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT cho bảng `pma__history`
---
-ALTER TABLE `pma__history`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT cho bảng `pma__pdf_pages`
---
-ALTER TABLE `pma__pdf_pages`
-  MODIFY `page_nr` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT cho bảng `pma__savedsearches`
---
-ALTER TABLE `pma__savedsearches`
-  MODIFY `id` int(5) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT cho bảng `user`
 --
 ALTER TABLE `user`
-  MODIFY `UserID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `UserID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+--
+-- Các ràng buộc cho các bảng đã đổ
+--
+
+--
+-- Các ràng buộc cho bảng `bids`
+--
+ALTER TABLE `bids`
+  ADD CONSTRAINT `bids_ibfk_1` FOREIGN KEY (`ItemID`) REFERENCES `item` (`ItemID`),
+  ADD CONSTRAINT `bids_ibfk_2` FOREIGN KEY (`BidderID`) REFERENCES `user` (`UserID`);
+
+--
+-- Các ràng buộc cho bảng `solditems`
+--
+ALTER TABLE `solditems`
+  ADD CONSTRAINT `solditems_ibfk_1` FOREIGN KEY (`ItemID`) REFERENCES `item` (`ItemID`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
