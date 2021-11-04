@@ -93,10 +93,10 @@ if(!isset($_SESSION['userid'])){
                         <li>Kết quả đấu giá</li>
                     </ul>
 
-                    <!-- <div class="box">
-                        <h1>Các mặt hàng đấu giá</h1>
+                    <div class="box">
+                        <h1>Lịch sử khởi tạo đấu giá</h1>
                         
-                    </div> -->
+                    </div>
 
                      <?php
                              while($userResults) { 
