@@ -170,7 +170,7 @@ if(!isset($_SESSION['userid'])){
                                     <img src="img/product1.jpg" alt="" class="img-responsive">
                                 </a>
                                 <div class="text">
-                                    <h3><a href="detail.php?ItemNo=<?php echo $userBids['ItemID'] ?>"><?php echo $userResults['ItemName'] ?></a></h3>
+                                    <h3><a href="detail.php?ItemNo=<?php echo $userBids['ItemID'] ?>"><?php echo $userBids['ItemName'] ?></a></h3>
                                     <p align="center">Giá thầu cuối cùng của bạn</p>
                                     <p class="price">Giá : <?php echo number_format($userBids['BidAmount']);?></p>
                                      <p align="center">Giá thầu tối đa hiện tại</p>
