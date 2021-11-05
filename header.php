@@ -96,7 +96,7 @@
 
                 
                 <div class="navbar-collapse collapse right" id="basket-overview">
-                    <a href="addlisting.php" class="btn btn-primary navbar-btn"><span class="hidden-sm">Đấu giá</span></a>
+                    <a href="addlisting.php" class="btn btn-primary navbar-btn"><span class="hidden-sl">Đấu giá</span></a>
                 </div>
                 
 
