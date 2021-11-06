@@ -180,7 +180,7 @@
                                     <p class="price">Giá : <?php echo number_format($list['CurrentPrice']);?></p>
                                     <p class="buttons">
                                         <a href="detail.php?ItemNo=<?php echo $list['ItemID'] ?>" class="btn btn-default">Xem chi tiết</a>
-                                        <a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Mua ngay</a>
+                                        <a href="detail.php?ItemNo=<?php echo $list['ItemID'] ?>" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Mua ngay</a>
                                     </p>
                                 </div>
                                 <!-- /.text -->
