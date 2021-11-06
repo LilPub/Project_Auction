@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 05, 2021 lúc 03:50 PM
+-- Thời gian đã tạo: Th10 06, 2021 lúc 08:07 AM
 -- Phiên bản máy phục vụ: 10.4.21-MariaDB
 -- Phiên bản PHP: 8.0.10
 
@@ -51,7 +51,9 @@ INSERT INTO `bids` (`ItemID`, `BidderID`, `BidAmount`) VALUES
 (40, 10, 57500000),
 (63, 10, 33000000),
 (63, 10, 36000000),
-(63, 10, 36000000);
+(63, 10, 36000000),
+(69, 1, 2600000),
+(70, 9, 3000000);
 
 -- --------------------------------------------------------
 
@@ -107,7 +109,7 @@ INSERT INTO `item` (`ItemID`, `ItemName`, `SellerID`, `StartingPrice`, `Expected
 (32, 'Apple Iphone 6 Grigio 64Gb', NULL, 5900000, 6390000, 5900000, 'img/phone5.jpg', '“\r\nApple Iphone 6 Grigio 64Gb in buono stato, con custodia e pellicole apply….\r\n\r\nĐiện thoại di động này ở dạng MỚI Tình trạng khác, nghĩa là không có hộp bán lẻ vì nó được nhận với số lượng lớn. Về mặt thẩm mỹ, điện thoại di động ở tình trạng hoàn hảo hoặc gần như hoàn hảo, Màn hình hoàn hảo, có thể có một chút vết xước nhỏ có thể nhìn thấy hoặc không nhìn thấy trên vỏ sau khi vận chuyển, v.v., Điện thoại di động được kiểm tra hoạt động tốt. Điện thoại di động được MỞ KHÓA và sẵn sàng cho tất cả các nhà cung cấp dịch vụ GSM như AT&T, T-Mobile Straight Talk, MetroPCS, v.v. trên thế giới. Nó không hoạt động với bất kỳ nhà cung cấp dịch vụ CDMA nào như Verizon, Sprint, Boost Mobile. Vui lòng liên hệ với chúng tôi nếu có bất kỳ câu hỏi nào. ”', 3, '2020-09-16 00:00:00'),
 (33, 'UTStarcom CDM7126 - Đen bạc', NULL, 15000000, 18200000, 15000000, 'img/phone6.jpg', '\r\nThông tin sản phẩm\r\nKiểu dáng đẹp, nhỏ gọn và mạnh mẽ, điện thoại di động Cricket UTStarcom CDM7126 màu bạc và đen là sự lựa chọn tuyệt vời cho những người dùng tìm kiếm độ tin cậy và hiệu suất. Điện thoại di động UTStarcom này có màn hình màu tuyệt đẹp, thiết kế kiểu nắp gập, hỗ trợ ba băng tần và pin Li-ion với thời gian thoại lên đến 311 phút và thời gian chờ lên đến 248 giờ. Lướt web nhanh chóng, kết nối nhiều thiết bị thông qua công nghệ Bluetooth và tận hưởng tải mọi thứ từ nhạc chuông đến trò chơi cho đến ứng dụng qua điện thoại di động này. Người dùng sẽ được giải trí hàng giờ với các trò chơi và ứng dụng Cricket có trên điện thoại di động UTStarcom này. Chức năng loa ngoài, quay số kích hoạt bằng giọng nói và nhập văn bản tiên đoán đều giúp giao tiếp dễ dàng hơn, trong khi các ứng dụng máy tính, báo thức và lịch giúp người dùng giữ đúng lịch trình và làm việc hiệu quả. Điện thoại di động UTStarcom CDM7126 giữ các số liên lạc được sắp xếp trong một danh bạ dễ truy cập. Với trọng lượng chỉ 3 oz và cao 3,6 inch, rộng 1,9 inch và sâu 0,7 inch, điện thoại di động UTStarcom này dễ dàng nhét vào túi, ví và cặp.', 3, '2021-09-01 00:00:00'),
 (34, 'Ulefone Paris X Android 5.1', NULL, 13000000, 19200000, 13000000, 'img/phone7.jpg', 'Đặc trưng:\r\n \r\nAndroid 5.1 (Lollipop) với bộ xử lý Quad-Core 1.0GHz MT6735P và RAM 2GB + ROM 16GB\r\nHỗ trợ mạng 2G: GSM 850/900/1800/1900 MHz\r\nHỗ trợ mạng 3G: WCDMA 900/2100 MHz\r\nHỗ trợ mạng 4G: FDD-LTE Band 1/3/7/20 (2100/1800/2600 / 800MHz)\r\nhai sim hai sóng\r\nMàn hình điện dung IPS 10 điểm cảm ứng 5,0 inch, với độ phân giải màn hình HD 1280 * 720\r\nCamera sau 8.0MP (nội suy 13.0MP) với đèn pin và lấy nét tự động.\r\nCamera trước 5.0 MP (nội suy 8.0MP), làm cho những bức ảnh selfie của bạn trở nên đặc biệt hơn\r\nUltra Experience - Cập nhật không dây. Được cài đặt sẵn Android 5.1 O.S. Lollipop, tải xuống nhiều ứng dụng trên Cửa hàng Play phổ biến. Hỗ trợ cập nhật hệ thống không dây, giải pháp một cửa, không đau khi sử dụng Ulefone ParisX của bạn.\r\nHỗ trợ hầu hết các trò chơi và ứng dụng Android định dạng APK.', 3, '2021-10-04 00:00:00'),
-(35, 'Tông đơ điện Makita N3701 6mm (1/4 \")', NULL, 560000, 840000, 590000, 'img/elec1.jpg', '\r\nThông tin chi tiết sản phẩm\r\n\r\nSố mô hình: N3701\r\nLoại sản phẩm: 1/4 \"Tông đơ\r\nCông suất đầu vào: 440W\r\nTrọng lượng: 1,7kg\r\nTốc độ không tải: 30.000 vòng / phút\r\nDây cấp nguồn: 2,5m\r\nCơ sở: 82 x 90mm\r\nChiều dài tổng thể: 220mm\r\nKích thước Collet: 6mm (1/4 \")\r\nĐiện áp: 220V (Loại có dây / phích cắm C)\r\nVui lòng kiểm tra xem điện áp ghi trên mục có tương ứng với điện áp chính trong nhà bạn không.', 1, '2021-09-24 00:00:00'),
+(35, 'Tông đơ điện Makita N3701 6mm (1/4 \")', NULL, 560000, 840000, 840000, 'img/elec1.jpg', '\r\nThông tin chi tiết sản phẩm\r\n\r\nSố mô hình: N3701\r\nLoại sản phẩm: 1/4 \"Tông đơ\r\nCông suất đầu vào: 440W\r\nTrọng lượng: 1,7kg\r\nTốc độ không tải: 30.000 vòng / phút\r\nDây cấp nguồn: 2,5m\r\nCơ sở: 82 x 90mm\r\nChiều dài tổng thể: 220mm\r\nKích thước Collet: 6mm (1/4 \")\r\nĐiện áp: 220V (Loại có dây / phích cắm C)\r\nVui lòng kiểm tra xem điện áp ghi trên mục có tương ứng với điện áp chính trong nhà bạn không.', 1, '2021-11-06 00:00:00'),
 (36, 'Tông đơ DeWALT DWE 6000 1/4 \"(6mm)', NULL, 210000, 290000, 210000, 'img/elec2.jpg', 'MỚI DeWALT DWE 6000 1/4 \"(6mm) Công cụ tông đơ (AC 220V) Đồ gỗ\r\n(Không bao gồm bit)\r\n\r\n■ Thông số kỹ thuật\r\n▶ Loại sản phẩm: 1/4 \"Tông đơ\r\n▶ Điện áp: 220V 390W (Loại phích cắm C)\r\n▶ Công suất Collet: 6mm (1/4 \")\r\n▶ Trọng lượng: 2.1kg\r\n▶ Tốc độ không tải: 30.000 vòng / phút\r\n▶ Kích thước Dài: 110mm x Cao: 205mm\r\n▶ Loại phích cắm: Loại C\r\n', 1, '2021-09-27 00:00:00'),
 (37, 'Rockwell HD Block Planer Mẫu 167', NULL, 2100000, 2900000, 2100000, 'img/elec3.jpg', ' Chúng tôi luôn cố gắng cung cấp dịch vụ tốt nhất và sản phẩm chất lượng cao cho mọi khách hàng và mục tiêu của chúng tôi là đảm bảo bạn có trải nghiệm mua sắm thú vị với chúng tôi. Nếu có bất kỳ vấn đề, sự cố hoặc trải nghiệm khó chịu nào, vui lòng liên hệ với chúng tôi để giải quyết bất kỳ vấn đề nào trước khi để lại cho chúng tôi phản hồi tiêu cực hoặc mở bất kỳ tranh chấp nào trên eBay hoặc PayPal. Chúng tôi hứa sẽ cố gắng hết sức để giải quyết vấn đề và thường đó là những gì chúng tôi làm. Hãy cho chúng tôi cơ hội để giải quyết mọi vấn đề vì giao tiếp tốt luôn là cách tốt nhất để giải quyết mọi vấn đề. Nếu bạn hài lòng với dịch vụ của chúng tôi, xin vui lòng để lại cho chúng tôi 5 sao phản hồi tích cực. Ý kiến ​​của bạn và sự công nhận của bạn sẽ khiến chúng tôi tự tin hơn để phát triển doanh nghiệp tốt hơn và phục vụ bạn tốt hơn. Chúng tôi sẽ để lại một phản hồi tích cực sau khi nhận được thanh toán đầy đủ. Tất cả các tin nhắn, email hoặc câu hỏi sẽ được trả lời trong vòng 1 ngày làm việc. Nếu bạn không nhận được phản hồi của chúng tôi, vui lòng gửi lại email của bạn và chúng tôi sẽ trả lời bạn trong thời gian sớm nhất. Chúng tôi chỉ chấp nhận thanh toán qua PayPal. Vì vậy, vui lòng kiểm tra xem bạn có tài khoản PayPal hay không trước khi mua. Chúng tôi cung cấp chính sách hoàn lại tiền trong 30 ngày đảm bảo hoàn trả. Vận chuyển & Hoàn tiền', 1, '2021-09-29 00:00:00'),
 (38, 'MÁY NHIỆT KỸ THUẬT SỐ HỒNG NGOẠI LASER', NULL, 3400000, 4200000, 3400000, 'img/elec4.jpg', 'Chúng tôi luôn cố gắng cung cấp dịch vụ tốt nhất và sản phẩm chất lượng cao cho mọi khách hàng và mục tiêu của chúng tôi là đảm bảo bạn có trải nghiệm mua sắm thú vị với chúng tôi. Nếu có bất kỳ vấn đề, sự cố hoặc trải nghiệm khó chịu nào, vui lòng liên hệ với chúng tôi để giải quyết bất kỳ vấn đề nào trước khi để lại cho chúng tôi phản hồi tiêu cực hoặc mở bất kỳ tranh chấp nào trên eBay hoặc PayPal. Chúng tôi hứa sẽ cố gắng hết sức để giải quyết vấn đề và thường đó là những gì chúng tôi làm. Hãy cho chúng tôi cơ hội để giải quyết mọi vấn đề vì giao tiếp tốt luôn là cách tốt nhất để giải quyết mọi vấn đề. Nếu bạn hài lòng với dịch vụ của chúng tôi, xin vui lòng để lại cho chúng tôi 5 sao phản hồi tích cực. Ý kiến ​​của bạn và sự công nhận của bạn sẽ khiến chúng tôi tự tin hơn để phát triển doanh nghiệp tốt hơn và phục vụ bạn tốt hơn. Chúng tôi sẽ để lại một phản hồi tích cực sau khi nhận được thanh toán đầy đủ. Tất cả các tin nhắn, email hoặc câu hỏi sẽ được trả lời trong vòng 1 ngày làm việc. Nếu bạn không nhận được phản hồi của chúng tôi, vui lòng gửi lại email của bạn và chúng tôi sẽ trả lời bạn trong thời gian sớm nhất. Chúng tôi chỉ chấp nhận thanh toán qua PayPal. Vì vậy, vui lòng kiểm tra xem bạn có tài khoản PayPal hay không trước khi mua. Chúng tôi cung cấp chính sách hoàn lại tiền trong 30 ngày đảm bảo hoàn trả. Vận chuyển & Hoàn tiền', 1, '2021-09-30 00:00:00'),
@@ -141,8 +143,8 @@ INSERT INTO `item` (`ItemID`, `ItemName`, `SellerID`, `StartingPrice`, `Expected
 (66, 'Giày chạy bộ bản giới hạn sự kiện', NULL, 2600000, 3600000, 2600000, 'img/sh2.jpg', 'Giày chạy bộ cao cấp Nike nam Flyknit Max Air mới\r\n\r\n(Mới với Hộp)\r\n\r\nPhong cách # 620469-404\r\n\r\nMàu: Đen / Trắng / Xám\r\n\r\nKích thước: 11,5 US, 13 US\r\n\r\nGiữ lại ở mức 3600000\r\n\r\n \r\nMUA CHÚNG VỚI GIÁ 2600000\r\n\r\nPHÍ VẬN CHUYỂN / XỬ LÝ ĐƯỢC MIỄN PHÍ QUA CÁC CÔNG DỤNG TẠI Việt Nam. BỔ SUNG PHÍ VẬN CHUYỂN QUỐC TẾ.\r\n\r\nTÔI SẼ VẬN CHUYỂN NGAY SAU KHI THANH TOÁN ĐƯỢC THỰC HIỆN. TÔI CHẤP NHẬN PAYPAL,', 6, '2021-09-29 00:00:00'),
 (67, 'Giày chạy bộ phiên bản cổ điển', NULL, 2900000, 3600000, 2900000, 'img/sh3.jpg', 'Giày chạy bộ cao cấp Nike nam Flyknit Max Air mới\r\n\r\n(Mới với Hộp)\r\n\r\nPhong cách # 620469-404\r\n\r\nMàu: Xanh\r\n\r\nKích thước: 11,5 US, 13 US\r\n\r\nGiữ lại ở mức 3600000\r\n\r\n \r\nMUA CHÚNG VỚI GIÁ 2900000\r\n\r\nPHÍ VẬN CHUYỂN / XỬ LÝ ĐƯỢC MIỄN PHÍ QUA CÁC CÔNG DỤNG TẠI Việt Nam. BỔ SUNG PHÍ VẬN CHUYỂN QUỐC TẾ.\r\n\r\nTÔI SẼ VẬN CHUYỂN NGAY SAU KHI THANH TOÁN ĐƯỢC THỰC HIỆN. TÔI CHẤP NHẬN PAYPAL,', 6, '2021-09-23 00:00:00'),
 (68, 'Boot gia cao cấp giới hạn', NULL, 3700000, 5100000, 3780000, 'img/sh4.jpg', 'Giày chạy bộ cao cấp Nike nam Flyknit Max Air mới\r\n\r\n(Mới với Hộp)\r\n\r\nPhong cách # 620469-404\r\n\r\nMàu: Đen xám\r\n\r\nKích thước: 11,5 US, 13 US\r\n\r\nGiữ lại ở mức 5100000\r\n\r\n \r\nMUA CHÚNG VỚI GIÁ 3780000\r\n\r\nPHÍ VẬN CHUYỂN / XỬ LÝ ĐƯỢC MIỄN PHÍ QUA CÁC CÔNG DỤNG TẠI Việt Nam. BỔ SUNG PHÍ VẬN CHUYỂN QUỐC TẾ.\r\n\r\nTÔI SẼ VẬN CHUYỂN NGAY SAU KHI THANH TOÁN ĐƯỢC THỰC HIỆN. TÔI CHẤP NHẬN PAYPAL,', 6, '2021-09-16 00:00:00'),
-(69, 'Giày cao gót show diễn BP', NULL, 2100000, 2600000, 2100000, 'img/sh5.jpg', 'Giày chạy bộ cao cấp Nike nam Flyknit Max Air mới\r\n\r\n(Mới với Hộp)\r\n\r\nPhong cách # 620469-404\r\n\r\nMàu: Màu pha\r\n\r\nKích thước: 11,5 US, 13 US\r\n\r\nGiữ lại ở mức 2600000\r\n\r\n \r\nMUA CHÚNG VỚI GIÁ 2100000\r\n\r\nPHÍ VẬN CHUYỂN / XỬ LÝ ĐƯỢC MIỄN PHÍ QUA CÁC CÔNG DỤNG TẠI Việt Nam. BỔ SUNG PHÍ VẬN CHUYỂN QUỐC TẾ.\r\n\r\nTÔI SẼ VẬN CHUYỂN NGAY SAU KHI THANH TOÁN ĐƯỢC THỰC HIỆN. TÔI CHẤP NHẬN PAYPAL,', 6, '2021-09-05 00:00:00'),
-(70, 'Sandal phiên bản sự kiện ', NULL, 1900000, 3000000, 3000000, 'img/sh6.jpg', 'Giày chạy bộ cao cấp Nike nam Flyknit Max Air mới\r\n\r\n(Mới với Hộp)\r\n\r\nPhong cách # 620469-404\r\n\r\nMàu: Vàng / Đen\r\n\r\nKích thước: 11,5 US, 13 US\r\n\r\nGiữ lại ở mức 3000000\r\n\r\n \r\nMUA CHÚNG VỚI GIÁ 1900000\r\n\r\nPHÍ VẬN CHUYỂN / XỬ LÝ ĐƯỢC MIỄN PHÍ QUA CÁC CÔNG DỤNG TẠI Việt Nam. BỔ SUNG PHÍ VẬN CHUYỂN QUỐC TẾ.\r\n\r\nTÔI SẼ VẬN CHUYỂN NGAY SAU KHI THANH TOÁN ĐƯỢC THỰC HIỆN. TÔI CHẤP NHẬN PAYPAL,', 6, '2021-11-05 00:00:00'),
+(69, 'Giày cao gót show diễn BP', NULL, 2100000, 2600000, 2600000, 'img/sh5.jpg', 'Giày chạy bộ cao cấp Nike nam Flyknit Max Air mới\r\n\r\n(Mới với Hộp)\r\n\r\nPhong cách # 620469-404\r\n\r\nMàu: Màu pha\r\n\r\nKích thước: 11,5 US, 13 US\r\n\r\nGiữ lại ở mức 2600000\r\n\r\n \r\nMUA CHÚNG VỚI GIÁ 2100000\r\n\r\nPHÍ VẬN CHUYỂN / XỬ LÝ ĐƯỢC MIỄN PHÍ QUA CÁC CÔNG DỤNG TẠI Việt Nam. BỔ SUNG PHÍ VẬN CHUYỂN QUỐC TẾ.\r\n\r\nTÔI SẼ VẬN CHUYỂN NGAY SAU KHI THANH TOÁN ĐƯỢC THỰC HIỆN. TÔI CHẤP NHẬN PAYPAL,', 6, '2021-11-06 00:00:00'),
+(70, 'Sandal phiên bản sự kiện ', NULL, 1900000, 3000000, 3000000, 'img/sh6.jpg', 'Giày chạy bộ cao cấp Nike nam Flyknit Max Air mới\r\n\r\n(Mới với Hộp)\r\n\r\nPhong cách # 620469-404\r\n\r\nMàu: Vàng / Đen\r\n\r\nKích thước: 11,5 US, 13 US\r\n\r\nGiữ lại ở mức 3000000\r\n\r\n \r\nMUA CHÚNG VỚI GIÁ 1900000\r\n\r\nPHÍ VẬN CHUYỂN / XỬ LÝ ĐƯỢC MIỄN PHÍ QUA CÁC CÔNG DỤNG TẠI Việt Nam. BỔ SUNG PHÍ VẬN CHUYỂN QUỐC TẾ.\r\n\r\nTÔI SẼ VẬN CHUYỂN NGAY SAU KHI THANH TOÁN ĐƯỢC THỰC HIỆN. TÔI CHẤP NHẬN PAYPAL,', 6, '2021-11-06 00:00:00'),
 (74, 'Oto điều khiển từ xa ', 10, 30000000, 50000000, 30000000, 'img/Item_25796.jpg', 'Với động cơ V-12 769 mã lực và ngoại thất kỳ lạ, Lamborghini Aventador 2022 là định nghĩa của một chiếc siêu xe. Trong khi các đối thủ cạnh tranh như Ferrari SF90 đón nhận một tương lai điện khí hóa, thì nhà máy 12 xi-lanh của Lambo tiêu thụ nhiên liệu như một cốc bia frat bro chugs. Cửa cắt kéo của nó, tỷ lệ rộng và thấp, và thân xe có lỗ thông hơi lớn gấp đôi như một rạp hát trên bánh xe đang chiếu Fast and Furious vĩnh viễnphim. Bên trong, cabin có thể tùy chỉnh cao của nó có đủ chỗ cho hai người lái, nhưng có rất ít không gian để chứa các vật dụng rời. Phía sau tay lái, người lái có thể kích hoạt âm thanh chói tai của Aventador bằng một cú đâm của chân phải hoặc trải nghiệm sự nhanh nhẹn đáng ngạc nhiên của cỗ máy khổng lồ bằng cách xoay bánh xe. Trong khi hộp số tự động lỗi thời của nó gần như gây khó chịu như việc loại bỏ mái nhà cồng kềnh của chiếc roadster, đó chỉ là một sự đền tội nhỏ cho sức mạnh tuyệt vời và phong cách không thể nhầm lẫn của Aventador 2022.', 1, '2021-11-06 05:08:00'),
 (75, 'Máy ảnh canon 60D', 10, 15000000, 25000000, 15000000, 'img/Item_26432.jpg', 'Canon 60D là dòng máy bán chuyên nhưng lại có khả năng quay phim độ nét cao 1080p. Chiếc máy này có vài tính năng của dòng máy cao cấp Canon EOS 5D Mark II, bao gồm chức năng quay phim, chức năng xem trực tiếp, và công nghệ xử lý ảnh DiGIC 4.Những đoạn phim được thu với định dạng MOV với chuẩn nén video H.264/MPEG-4 và tuyến âm thanh PCM.', 1, '2021-11-06 05:15:00');
 
@@ -155,7 +157,7 @@ INSERT INTO `item` (`ItemID`, `ItemName`, `SellerID`, `StartingPrice`, `Expected
 CREATE TABLE `solditems` (
   `InvoiceNumber` int(11) NOT NULL,
   `ItemID` int(10) NOT NULL,
-  `BuyerID` int(6) NOT NULL,
+  `BuyerID` int(10) NOT NULL,
   `Date` datetime NOT NULL,
   `FinalValue` int(6) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -165,7 +167,9 @@ CREATE TABLE `solditems` (
 --
 
 INSERT INTO `solditems` (`InvoiceNumber`, `ItemID`, `BuyerID`, `Date`, `FinalValue`) VALUES
-(1, 63, 10, '2021-11-05 00:00:00', 36000000);
+(1, 63, 10, '2021-11-05 00:00:00', 36000000),
+(2, 69, 1, '2021-11-06 00:00:00', 2600000),
+(3, 70, 9, '2021-11-06 00:00:00', 3000000);
 
 -- --------------------------------------------------------
 
@@ -223,7 +227,8 @@ ALTER TABLE `item`
 --
 ALTER TABLE `solditems`
   ADD PRIMARY KEY (`InvoiceNumber`),
-  ADD KEY `ItemID` (`ItemID`);
+  ADD KEY `ItemID` (`ItemID`),
+  ADD KEY `solditems_ibfk_2` (`BuyerID`);
 
 --
 -- Chỉ mục cho bảng `user`
@@ -246,13 +251,13 @@ ALTER TABLE `item`
 -- AUTO_INCREMENT cho bảng `solditems`
 --
 ALTER TABLE `solditems`
-  MODIFY `InvoiceNumber` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `InvoiceNumber` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT cho bảng `user`
 --
 ALTER TABLE `user`
-  MODIFY `UserID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `UserID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- Các ràng buộc cho các bảng đã đổ
@@ -269,7 +274,8 @@ ALTER TABLE `bids`
 -- Các ràng buộc cho bảng `solditems`
 --
 ALTER TABLE `solditems`
-  ADD CONSTRAINT `solditems_ibfk_1` FOREIGN KEY (`ItemID`) REFERENCES `item` (`ItemID`);
+  ADD CONSTRAINT `solditems_ibfk_1` FOREIGN KEY (`ItemID`) REFERENCES `item` (`ItemID`),
+  ADD CONSTRAINT `solditems_ibfk_2` FOREIGN KEY (`BuyerID`) REFERENCES `user` (`UserID`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
