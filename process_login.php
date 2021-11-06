@@ -11,9 +11,10 @@ session_start();
         if (mysqli_num_rows($result) >0) {
             $row = mysqli_fetch_array($result);
             $pass_saved = $row['Password'];
-            if (password_verify($pass, $pass_saved) and $row['status'] == 1 ) {
+            if (password_verify($pass, $pass_saved) and ($row['status'] == 1 || $row['status'] == 2)) {
                 $_SESSION['userid'] = $row['UserID'];
                 $_SESSION['username'] = $u;
+                $_SESSION['status'] = $row['status'];
                 header("location:index.php");
             } else {
                 header("location:register.php?err=1");

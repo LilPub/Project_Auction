@@ -13,11 +13,19 @@
                     <?php
 
                     if(isset($_SESSION['username'])) {
-                        echo '
-                        <li><i style="color:white; margin-right:5px" class="fa fa-user" aria-hidden="true"></i>
-                        	<a href="userItems.php?CategoryID=admin">'.$_SESSION["username"].'</a></li>
-                        <li><a href="logout.php">Đăng xuất</a></li>
-                        ';
+                        if(isset($_SESSION['status'])&&($_SESSION['status']==2)){
+                            echo '
+                            <li><i style="color:white; margin-right:5px" class="fa fa-user" aria-hidden="true"></i>
+                                <a href="userItems.php?CategoryID=admin">'.$_SESSION["username"].'</a></li>
+                            <li><a href="logout.php">Đăng xuất</a></li>
+                            ';
+                        }else{
+                            echo '
+                            <li><i style="color:white; margin-right:5px" class="fa fa-user" aria-hidden="true"></i>
+                                <a href="usershop.php">'.$_SESSION["username"].'</a></li>
+                            <li><a href="logout.php">Đăng xuất</a></li>
+                            ';
+                        }
                     } else {
                         echo '
                         <li><a href="register.php">Đăng nhập</a></li>
@@ -40,7 +48,7 @@
 
                 <a class="navbar-brand home" href="index.php" data-animate-hover="bounce">
                    <img height="50px" src="img/logoTLU1.png" alt="Obaju logo" class="hidden-xs">
-                    <img src="img/logo-small.png" alt="Obaju logo" class="visible-xs"><span class="sr-only">Obaju - go to homepage</span>
+                    <img src="img/logoTLU1.png" alt="Trang chủ" class="visible-xs"><span class="sr-only">Obaju - go to homepage</span>
                 </a>
                 <div class="navbar-buttons">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
@@ -88,7 +96,7 @@
 
                 
                 <div class="navbar-collapse collapse right" id="basket-overview">
-                    <a href="addlisting.php" class="btn btn-primary navbar-btn"><span class="hidden-sm">Đấu giá</span></a>
+                    <a href="addlisting.php" class="btn btn-primary navbar-btn"><span class="hidden-sl">Đấu giá</span></a>
                 </div>
                 
 

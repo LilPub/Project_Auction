@@ -264,8 +264,12 @@
 
 
                                 <p class="text-center buttons">
-                                    <a href="" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Mua ngay với giá: <?php echo number_format($row['ExpectedPrice']);?> </a> 
-                                    
+                                    <a href="timeEnd.php?ItemNo=<?php echo $ItemNo;?>" id="stopCountdown" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Mua ngay với giá: <?php echo number_format($row['ExpectedPrice']);?> </a> 
+                                    <script type="text/javascript">
+                                        document.getElementById('stopCountdown').onclick = function(e){
+                                            alert('Chúc mừng bạn mua thành công!');
+                                        }
+                                    </script>
                                 </p>
 
 

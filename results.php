@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -73,13 +74,13 @@
                 <div class="col-md-12">
 
                     <ul class="breadcrumb">
-                        <li><a href="#">Home</a>
+                        <li><a href="index.php">Trang chủ</a>
                         </li>
-                        <li>Search Results</li>
+                        <li>Kết quả tìm kiếm</li>
                     </ul>
 
                     <div class="box">
-                        <h1>Search Results for '<?php echo $keyword ?>'</h1>
+                        <h1>kết quả tìm kiếm cho '<?php echo $keyword ?>'</h1>
                         
                     </div>
 
@@ -109,7 +110,7 @@
                                 </a>
                                 <div class="text">
                                     <h3><?php echo $searchResults['ItemName'] ?></h3>
-                                    <p class="price">Rs : <?php echo number_format($searchResults['CurrentPrice'],2);?></p>
+                                    <p class="price">Giá : <?php echo number_format($searchResults['CurrentPrice']);?></p>
                                 </div>
                             </div>
                             <!-- /.product -->
