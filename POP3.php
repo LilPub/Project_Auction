@@ -269,7 +269,7 @@ class POP3
         //Restore the error handler
         restore_error_handler();
 
-        //Did we connect?
+        
         if (false === $this->pop_conn) {
             //It would appear not...
             $this->setError(
