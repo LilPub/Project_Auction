@@ -15,9 +15,22 @@
                     if(isset($_SESSION['username'])) {
                         if(isset($_SESSION['status'])&&($_SESSION['status']==2)){
                             echo '
-                            <li><i style="color:white; margin-right:5px" class="fa fa-user" aria-hidden="true"></i>
-                                <a href="userItems.php?CategoryID=admin">'.$_SESSION["username"].'</a></li>
-                            <li><a href="logout.php">Đăng xuất</a></li>
+                            <li class="admin__select">
+                                <i style="color:white; margin-right:5px" class="fa fa-user" aria-hidden="true"></i>
+                                <a href="#">'.$_SESSION["username"].'</a>
+
+                                <div class="admin__select-option">
+                                    <ul class="admin__select-option-list">
+                                        <a href="userItems.php?CategoryID=admin"><li class="admin__select-option-item">Quản lý kho</li></a> 
+                                        <a href="historyUser.php"><li class="admin__select-option-item">Quản lý người dùng</li></a>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="logout.php">Đăng xuất</a>
+                            </li>
+                            
+
                             ';
                         }else{
                             echo '
