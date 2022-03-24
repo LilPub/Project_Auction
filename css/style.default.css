@@ -1346,6 +1346,8 @@ body {
   line-height: 1.42857143;
   color: #333333;
   background-color: #f0f0f0;
+  position: relative;
+  z-index: -10;
 }
 a {
   color: #4fbfa8;
