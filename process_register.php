@@ -35,15 +35,15 @@ if (isset($_POST['register'])) {
             $mail->isSMTP(); // gửi mail SMTP
             $mail->Host = 'smtp.gmail.com'; // Set the SMTP server to send through
             $mail->SMTPAuth = true; // Enable SMTP authentication
-            $mail->Username = 'nghlong011@gmail.com'; // SMTP username
-            $mail->Password = 'agvyvoywphpsktxg'; // SMTP password
+            $mail->Username = 'hiep140701@gmail.com'; // SMTP username
+            $mail->Password = 'iyxhbgdeyqobnrib'; // SMTP password
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
             $mail->Port = 587; // TCP port to connect to
             $mail->CharSet = 'UTF-8';
             //Recipients
-            $mail->setFrom('nghlong011@gmail.com', 'Đấu giá TLU');
+            $mail->setFrom('hiep140701@gmail.com', 'Đấu giá TLU');
 
-            $mail->addReplyTo('nghlong011@gmail.com', 'Đấu giá TLU');
+            $mail->addReplyTo('hiep140701@gmail.com', 'Đấu giá TLU');
 
             $mail->addAddress($email); // Add a recipient
 
